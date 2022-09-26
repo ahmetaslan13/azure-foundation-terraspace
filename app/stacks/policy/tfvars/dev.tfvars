@@ -2,6 +2,12 @@
 
 // *** PMBB Policy List Values *** 
 
+test = {
+  "test" = {
+    te = "as"
+  }
+}
+
 pbmm_policy_id_list = {
 
   // - Access Control -> Account Management
@@ -53,7 +59,7 @@ pbmm_policy_id_list = {
   "PBMM-8" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/5744710e-cc2f-4ee8-8809-3b11e89f4bc9"
     display_name = "App Service apps should not have CORS configured to allow every resource to access your apps"
-    description = "Cross-Origin Resource Sharing (CORS) should not allow all domains to access your app. Allow only required domains to interact with your app." 
+    description =  "Cross-Origin Resource Sharing (CORS) should not allow all domains to access your app. Allow only required domains to interact with your app." 
   }
   
 // - Access Control -> Separation of Duties
@@ -533,7 +539,7 @@ pbmm_policy_id_list = {
    display_name = "Virtual machines should be connected to a specified workspace"
    description = "Reports virtual machines as non-compliant if they aren't logging to the Log Analytics workspace specified in the policy/initiative assignment."
   }
-}
+  }
 
 
 defender_policy_id_list = {
@@ -1116,12 +1122,12 @@ defender_policy_id_list = {
     display_name = "Restrict access to privileged accounts"
     description = "CMA_0446 - Restrict access to privileged accounts"
   }
- "CIS-108" = {
+  "CIS-108" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/32f22cfa-770b-057c-965b-450898425519"
     display_name = "Revoke privileged roles as appropriate"
     description = "CMA_0483 - Revoke privileged roles as appropriate"
   }
- "CIS-109" = {
+  "CIS-109" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/e714b481-8fac-64a2-14a9-6f079b2501a4"
     display_name = "Use privileged identity management"
     description = "CMA_0533 - Use privileged identity management"
@@ -1147,47 +1153,47 @@ defender_policy_id_list = {
 
  // - 2 Security Center -> Ensure that Azure Defender is set to On for Servers
 
- "CIS-113" = {
+  "CIS-113" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/4da35fc9-c9e7-4960-aec9-797fe7d9051d"
     display_name = "Azure Defender for servers should be enabled"
     description = "Azure Defender for servers provides real-time threat protection for server workloads and generates hardening recommendations as well as alerts about suspicious activities."
   }
- "CIS-114" = {
+  "CIS-114" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/3d399cf3-8fc6-0efc-6ab0-1412f1198517"
     display_name = "Block untrusted and unsigned processes that run from USB"
     description = "CMA_0050 - Block untrusted and unsigned processes that run from USB"
   }
- "CIS-115" = {
+  "CIS-115" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/86ecd378-a3a0-5d5b-207c-05e6aaca43fc"
     display_name = "Detect network services that have not been authorized or approved"
     description = "CMA_C1700 - Detect network services that have not been authorized or approved"
   }
- "CIS-116" = {
+  "CIS-116" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/63f63e71-6c3f-9add-4c43-64de23e554a7"
     display_name = "Manage gateways"
     description = "CMA_0363 - Manage gateways"
   }
- "CIS-117" = {
+  "CIS-117" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/50e81644-923d-33fc-6ebb-9733bc8d1a06"
     display_name = "Perform a trend analysis on threats"
     description = "CMA_0389 - Perform a trend analysis on threats"
   }
- "CIS-118" = {
+  "CIS-118" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/3c5e0e1a-216f-8f49-0a15-76ed0d8b8e1f"
     display_name = "Perform vulnerability scans"
     description = "CMA_0393 - Perform vulnerability scans"
   }
- "CIS-119" = {
+  "CIS-119" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/4a6f5cbd-6c6b-006f-2bb1-091af1441bce"
     display_name = "Review malware detections report weekly"
     description = "CMA_0475 - Review malware detections report weekly"
   }
- "CIS-120" = {
+  "CIS-120" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/fad161f5-5261-401a-22dd-e037bae011bd"
     display_name = "Review threat protection status weekly"
     description = "CMA_0479 - Review threat protection status weekly"
   }
- "CIS-121" = {
+  "CIS-121" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/ea9d7c95-2f10-8a4d-61d8-7469bd2e8d65"
     display_name = "Update antivirus definitions"
     description = "CMA_0517 - Update antivirus definitions"
@@ -1198,212 +1204,212 @@ defender_policy_id_list = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/3d399cf3-8fc6-0efc-6ab0-1412f1198517"
    display_name = "Block untrusted and unsigned processes that run from USB"
    description = "CMA_0050 - Block untrusted and unsigned processes that run from USB"
- }
+  }
 "CIS-123" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/86ecd378-a3a0-5d5b-207c-05e6aaca43fc"
    display_name = "Detect network services that have not been authorized or approved"
    description = "CMA_C1700 - Detect network services that have not been authorized or approved"
- }
+  }
 "CIS-124" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/63f63e71-6c3f-9add-4c43-64de23e554a7"
    display_name = "Manage gateways"
    description = "CMA_0363 - Manage gateways"
- }
+  }
 "CIS-125" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/50e81644-923d-33fc-6ebb-9733bc8d1a06"
    display_name = "Perform a trend analysis on threats"
    description = "CMA_0389 - Perform a trend analysis on threats"
- }
+  }
 "CIS-126" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/3c5e0e1a-216f-8f49-0a15-76ed0d8b8e1f"
    display_name = "Perform vulnerability scans"
    description = "CMA_0393 - Perform vulnerability scans"
- }
+  }
 "CIS-127" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/4a6f5cbd-6c6b-006f-2bb1-091af1441bce"
    display_name = "Review malware detections report weekly"
    description = "CMA_0475 - Review malware detections report weekly"
- }
+  }
 "CIS-128" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/fad161f5-5261-401a-22dd-e037bae011bd"
    display_name = "Review threat protection status weekly"
    description = "CMA_0479 - Review threat protection status weekly"
- }
+  }
 "CIS-129" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/ea9d7c95-2f10-8a4d-61d8-7469bd2e8d65"
    display_name = "Update antivirus definitions"
    description = "CMA_0517 - Update antivirus definitions"
- }
+  }
 
  // - 2 Security Center -> Ensure that 'Automatic provisioning of monitoring agent' is set to 'On'
- "CIS-130" = {
+  "CIS-130" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/475aae12-b88a-4572-8b36-9b712b2b3a17"
     display_name = "Auto provisioning of the Log Analytics agent should be enabled on your subscription"
     description = "To monitor for security vulnerabilities and threats, Azure Security Center collects data from your Azure virtual machines. Data is collected by the Log Analytics agent, formerly known as the Microsoft Monitoring Agent (MMA), which reads various security-related configurations and event logs from the machine and copies the data to your Log Analytics workspace for analysis. We recommend enabling auto provisioning to automatically deploy the agent to all supported Azure VMs and any new ones that are created."
   } 
- "CIS-131" = {
+  "CIS-131" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2c6bee3a-2180-2430-440d-db3c7a849870"
     display_name = "Document security operations"
     description = "CMA_0202 - Document security operations"
-}
- "CIS-132" = {
+  }
+  "CIS-132" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/5fc24b95-53f7-0ed1-2330-701b539b97fe"
     display_name = "Turn on sensors for endpoint security solution"
     description = "CMA_0514 - Turn on sensors for endpoint security solution"
-}
+  }
 
  // - 2 Security Center -> Ensure any of the ASC Default policy setting is not set to "Disabled"
- "CIS-133" = {
+  "CIS-133" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/b53aa659-513e-032c-52e6-1ce0ba46582f"
-    display_name = "Configure actions for noncompliant devices"
+    display_name =  "Configure actions for noncompliant devices"
     description = "CMA_0062 - Configure actions for noncompliant devices"
-}
- "CIS-134" = {
+  }
+  "CIS-134" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2f20840e-7925-221c-725d-757442753e7c"
     display_name = "Develop and maintain baseline configurations"
     description = "CMA_0153 - Develop and maintain baseline configurations"
-}
- "CIS-135" = {
+  }
+  "CIS-135" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/058e9719-1ff9-3653-4230-23f76b6492e0"
     display_name = "Enforce security configuration settings"
     description = "CMA_0249 - Enforce security configuration settings"
-}
- "CIS-136" = {
+  }
+  "CIS-136" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/7380631c-5bf5-0e3a-4509-0873becd8a63"
     display_name = "Establish a configuration control board"
     description = "CMA_0254 - Establish a configuration control board"
-}
- "CIS-137" = {
+  }
+  "CIS-137" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/526ed90e-890f-69e7-0386-ba5c0f1f784f"
     display_name = "Establish and document a configuration management plan"
     description = "CMA_0264 - Establish and document a configuration management plan"
-}
- "CIS-138" = {
+  }
+  "CIS-138" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/33832848-42ab-63f3-1a55-c0ad309d44cd"
     display_name = "Implement an automated configuration management tool"
     description = "CMA_0311 - Implement an automated configuration management tool"
-}
+  }
 
  // - 2 Security Center -> Ensure 'Additional email addresses' is configured with a security contact email
- "CIS-139" = {
+  "CIS-139" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/4f4f78b8-e367-4b10-a341-d9a4ad5cf1c7"
     display_name = "Subscriptions should have a contact email address for security issues"
     description = "To ensure the relevant people in your organization are notified when there is a potential security breach in one of your subscriptions, set a security contact to receive email notifications from Security Center."
-}
+  }
 
  // - 2 Security Center -> Ensure that 'Notify about alerts with the following severity' is set to 'High'
- "CIS-140" = {
+  "CIS-140" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/6e2593d9-add6-4083-9c9b-4b7d2188c899"
     display_name = "Email notification for high severity alerts should be enabled"
     description = "To ensure the relevant people in your organization are notified when there is a potential security breach in one of your subscriptions, enable email notifications for high severity alerts in Security Center."
-}
+  }
 
  // - 2 Security Center -> Ensure that Azure Defender is set to On for App Service
- "CIS-141" = {
+  "CIS-141" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2913021d-f2fd-4f3d-b958-22354e2bdbcb"
     display_name = "Azure Defender for App Service should be enabled"
     description = "Azure Defender for App Service leverages the scale of the cloud, and the visibility that Azure has as a cloud provider, to monitor for common web app attacks."
-}
+  }
 "CIS-142" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/3d399cf3-8fc6-0efc-6ab0-1412f1198517"
    display_name = "Block untrusted and unsigned processes that run from USB"
    description = "CMA_0050 - Block untrusted and unsigned processes that run from USB"
- }
+  }
 "CIS-143" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/86ecd378-a3a0-5d5b-207c-05e6aaca43fc"
    display_name = "Detect network services that have not been authorized or approved"
    description = "CMA_C1700 - Detect network services that have not been authorized or approved"
- }
+  }
 "CIS-144" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/63f63e71-6c3f-9add-4c43-64de23e554a7"
    display_name = "Manage gateways"
    description = "CMA_0363 - Manage gateways"
- }
+  }
 "CIS-145" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/50e81644-923d-33fc-6ebb-9733bc8d1a06"
    display_name = "Perform a trend analysis on threats"
    description = "CMA_0389 - Perform a trend analysis on threats"
- }
+  }
 "CIS-146" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/4a6f5cbd-6c6b-006f-2bb1-091af1441bce"
    display_name = "Review malware detections report weekly"
    description = "CMA_0475 - Review malware detections report weekly"
- }
+  }
 "CIS-147" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/fad161f5-5261-401a-22dd-e037bae011bd"
    display_name = "Review threat protection status weekly"
    description = "CMA_0479 - Review threat protection status weekly"
- }
+  }
 "CIS-148" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/ea9d7c95-2f10-8a4d-61d8-7469bd2e8d65"
    display_name = "Update antivirus definitions"
    description = "CMA_0517 - Update antivirus definitions"
- }
+  }
 
  // - 2 Security Center -> Ensure that Azure Defender is set to On for Azure SQL database servers
   "CIS-149" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/7fe3b40f-802b-4cdd-8bd4-fd799c948cc2"
     display_name = "Azure Defender for Azure SQL Database servers should be enabled"
     description = "Azure Defender for SQL provides functionality for surfacing and mitigating potential database vulnerabilities, detecting anomalous activities that could indicate threats to SQL databases, and discovering and classifying sensitive data."
-}
+  }
 "CIS-150" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/3d399cf3-8fc6-0efc-6ab0-1412f1198517"
    display_name = "Block untrusted and unsigned processes that run from USB"
    description = "CMA_0050 - Block untrusted and unsigned processes that run from USB"
- }
+  }
 "CIS-151" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/86ecd378-a3a0-5d5b-207c-05e6aaca43fc"
    display_name = "Detect network services that have not been authorized or approved"
    description = "CMA_C1700 - Detect network services that have not been authorized or approved"
- }
+  }
 "CIS-152" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/63f63e71-6c3f-9add-4c43-64de23e554a7"
    display_name = "Manage gateways"
    description = "CMA_0363 - Manage gateways"
- }
+  }
 "CIS-153" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/50e81644-923d-33fc-6ebb-9733bc8d1a06"
    display_name = "Perform a trend analysis on threats"
    description = "CMA_0389 - Perform a trend analysis on threats"
- }
+  }
 "CIS-154" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/3c5e0e1a-216f-8f49-0a15-76ed0d8b8e1f"
    display_name = "Perform vulnerability scans"
    description = "CMA_0393 - Perform vulnerability scans"
- }
+  }
 "CIS-155" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/4a6f5cbd-6c6b-006f-2bb1-091af1441bce"
    display_name = "Review malware detections report weekly"
    description = "CMA_0475 - Review malware detections report weekly"
- }
+  }
 "CIS-156" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/fad161f5-5261-401a-22dd-e037bae011bd"
    display_name = "Review threat protection status weekly"
    description = "CMA_0479 - Review threat protection status weekly"
- }
+  }
 "CIS-157" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/ea9d7c95-2f10-8a4d-61d8-7469bd2e8d65"
    display_name = "Update antivirus definitions"
    description = "CMA_0517 - Update antivirus definitions"
- }
+  }
 
  // - 2 Security Center -> Ensure that Azure Defender is set to On for SQL servers on machines
- "CIS-158" = {
+  "CIS-158" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/6581d072-105e-4418-827f-bd446d56421b"
     display_name = "Azure Defender for SQL servers on machines should be enabled"
     description = "Azure Defender for SQL provides functionality for surfacing and mitigating potential database vulnerabilities, detecting anomalous activities that could indicate threats to SQL databases, and discovering and classifying sensitive data."
-}
+  }
 "CIS-159" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/3d399cf3-8fc6-0efc-6ab0-1412f1198517"
    display_name = "Block untrusted and unsigned processes that run from USB"
    description = "CMA_0050 - Block untrusted and unsigned processes that run from USB"
- }
+  }
 "CIS-160" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/86ecd378-a3a0-5d5b-207c-05e6aaca43fc"
    display_name = "Detect network services that have not been authorized or approved"
    description = "CMA_C1700 - Detect network services that have not been authorized or approved"
- }
- "CIS-161" = {
+  }
+  "CIS-161" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/63f63e71-6c3f-9add-4c43-64de23e554a7"
     display_name = "Manage gateways"
     description = "CMA_0363 - Manage gateways"
@@ -1412,92 +1418,92 @@ defender_policy_id_list = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/50e81644-923d-33fc-6ebb-9733bc8d1a06"
    display_name = "Perform a trend analysis on threats"
    description = "CMA_0389 - Perform a trend analysis on threats"
- }
+  }
 "CIS-163" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/3c5e0e1a-216f-8f49-0a15-76ed0d8b8e1f"
    display_name = "Perform vulnerability scans"
    description = "CMA_0393 - Perform vulnerability scans"
- }
+  }
 "CIS-164" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/4a6f5cbd-6c6b-006f-2bb1-091af1441bce"
    display_name = "Review malware detections report weekly"
    description = "CMA_0475 - Review malware detections report weekly"
- }
+  }
 "CIS-165" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/fad161f5-5261-401a-22dd-e037bae011bd"
    display_name = "Review threat protection status weekly"
    description = "CMA_0479 - Review threat protection status weekly"
- }
+  }
 "CIS-166" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/ea9d7c95-2f10-8a4d-61d8-7469bd2e8d65"
    display_name = "Update antivirus definitions"
    description = "CMA_0517 - Update antivirus definitions"
- }
+  }
 
  // - 2 Security Center -> Ensure that Azure Defender is set to On for Storage
- "CIS-167" = {
+  "CIS-167" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/308fbb08-4ab8-4e67-9b29-592e93fb94fa"
     display_name = "Azure Defender for Storage should be enabled"
     description = "Azure Defender for Storage provides detections of unusual and potentially harmful attempts to access or exploit storage accounts."
-}
+  }
 "CIS-168" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/3d399cf3-8fc6-0efc-6ab0-1412f1198517"
    display_name = "Block untrusted and unsigned processes that run from USB"
    description = "CMA_0050 - Block untrusted and unsigned processes that run from USB"
- }
+  }
 "CIS-169" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/86ecd378-a3a0-5d5b-207c-05e6aaca43fc"
    display_name = "Detect network services that have not been authorized or approved"
    description = "CMA_C1700 - Detect network services that have not been authorized or approved"
- }
+  }
 "CIS-170" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/63f63e71-6c3f-9add-4c43-64de23e554a7"
    display_name = "Manage gateways"
    description = "CMA_0363 - Manage gateways"
- }
+  }
 "CIS-171" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/50e81644-923d-33fc-6ebb-9733bc8d1a06"
    display_name = "Perform a trend analysis on threats"
    description = "CMA_0389 - Perform a trend analysis on threats"
- }
+  }
 "CIS-172" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/3c5e0e1a-216f-8f49-0a15-76ed0d8b8e1f"
    display_name = "Perform vulnerability scans"
    description = "CMA_0393 - Perform vulnerability scans"
- }
+  }
 "CIS-173" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/4a6f5cbd-6c6b-006f-2bb1-091af1441bce"
    display_name = "Review malware detections report weekly"
    description = "CMA_0475 - Review malware detections report weekly"
- }
+  }
 "CIS-174" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/fad161f5-5261-401a-22dd-e037bae011bd"
    display_name = "Review threat protection status weekly"
    description = "CMA_0479 - Review threat protection status weekly"
- }
+  }
 "CIS-175" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/ea9d7c95-2f10-8a4d-61d8-7469bd2e8d65"
    display_name = "Update antivirus definitions"
    description = "CMA_0517 - Update antivirus definitions"
- }
+  }
 
  // - 2 Security Center -> Ensure that Azure Defender is set to On for Kubernetes
 "CIS-176" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/3d399cf3-8fc6-0efc-6ab0-1412f1198517"
    display_name = "Block untrusted and unsigned processes that run from USB"
    description = "CMA_0050 - Block untrusted and unsigned processes that run from USB"
- }
+  }
 "CIS-177" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/86ecd378-a3a0-5d5b-207c-05e6aaca43fc"
    display_name = "Detect network services that have not been authorized or approved"
    description = "CMA_C1700 - Detect network services that have not been authorized or approved"
- }
+  }
 "CIS-178" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/63f63e71-6c3f-9add-4c43-64de23e554a7"
    display_name = "Manage gateways"
    description = "CMA_0363 - Manage gateways"
- }
- "CIS-179" = {
+  }
+  "CIS-179" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/1c988dd6-ade4-430f-a608-2a3e5b0a6d38"
     display_name = "Microsoft Defender for Containers should be enabled"
     description = "Microsoft Defender for Containers provides hardening, vulnerability assessment and run-time protections for your Azure, hybrid, and multi-cloud Kubernetes environments."
@@ -1506,45 +1512,45 @@ defender_policy_id_list = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/50e81644-923d-33fc-6ebb-9733bc8d1a06"
    display_name = "Perform a trend analysis on threats"
    description = "CMA_0389 - Perform a trend analysis on threats"
- }
+  }
 "CIS-181" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/3c5e0e1a-216f-8f49-0a15-76ed0d8b8e1f"
    display_name = "Perform vulnerability scans"
    description = "CMA_0393 - Perform vulnerability scans"
- }
+  }
 "CIS-182" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/4a6f5cbd-6c6b-006f-2bb1-091af1441bce"
    display_name = "Review malware detections report weekly"
    description = "CMA_0475 - Review malware detections report weekly"
- }
+  }
 "CIS-183" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/fad161f5-5261-401a-22dd-e037bae011bd"
    display_name = "Review threat protection status weekly"
    description = "CMA_0479 - Review threat protection status weekly"
- }
+  }
 "CIS-184" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/ea9d7c95-2f10-8a4d-61d8-7469bd2e8d65"
    display_name = "Update antivirus definitions"
    description = "CMA_0517 - Update antivirus definitions"
- }
+  }
 
  // - 2 Security Center -> Ensure that Azure Defender is set to On for Container Registries
 "CIS-185" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/3d399cf3-8fc6-0efc-6ab0-1412f1198517"
    display_name = "Block untrusted and unsigned processes that run from USB"
    description = "CMA_0050 - Block untrusted and unsigned processes that run from USB"
- }
+  }
 "CIS-186" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/86ecd378-a3a0-5d5b-207c-05e6aaca43fc"
    display_name = "Detect network services that have not been authorized or approved"
    description = "CMA_C1700 - Detect network services that have not been authorized or approved"
- }
+  }
 "CIS-187" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/63f63e71-6c3f-9add-4c43-64de23e554a7"
    display_name = "Manage gateways"
    description = "CMA_0363 - Manage gateways"
- }
- "CIS-188" = {
+  }
+  "CIS-188" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/1c988dd6-ade4-430f-a608-2a3e5b0a6d38"
     display_name = "Microsoft Defender for Containers should be enabled"
     description = "Microsoft Defender for Containers provides hardening, vulnerability assessment and run-time protections for your Azure, hybrid, and multi-cloud Kubernetes environments."
@@ -1553,30 +1559,30 @@ defender_policy_id_list = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/50e81644-923d-33fc-6ebb-9733bc8d1a06"
    display_name = "Perform a trend analysis on threats"
    description = "CMA_0389 - Perform a trend analysis on threats"
- }
+  }
 "CIS-190" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/3c5e0e1a-216f-8f49-0a15-76ed0d8b8e1f"
    display_name = "Perform vulnerability scans"
    description = "CMA_0393 - Perform vulnerability scans"
- }
+  }
 "CIS-191" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/4a6f5cbd-6c6b-006f-2bb1-091af1441bce"
    display_name = "Review malware detections report weekly"
    description = "CMA_0475 - Review malware detections report weekly"
- }
+  }
 "CIS-192" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/fad161f5-5261-401a-22dd-e037bae011bd"
    display_name = "Review threat protection status weekly"
    description = "CMA_0479 - Review threat protection status weekly"
- }
+  }
 "CIS-193" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/ea9d7c95-2f10-8a4d-61d8-7469bd2e8d65"
    display_name = "Update antivirus definitions"
    description = "CMA_0517 - Update antivirus definitions"
- }
+  }
 
  // - 2 Security Center -> Ensure that Azure Defender is set to On for Key Vault
- "CIS-194" = {
+  "CIS-194" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/0e6763cc-5078-4e64-889d-ff4d9a839047"
     display_name = "Azure Defender for Key Vault should be enabled"
     description = "Azure Defender for Key Vault provides an additional layer of protection and security intelligence by detecting unusual and potentially harmful attempts to access or exploit key vault accounts."
@@ -1585,42 +1591,42 @@ defender_policy_id_list = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/3d399cf3-8fc6-0efc-6ab0-1412f1198517"
    display_name = "Block untrusted and unsigned processes that run from USB"
    description = "CMA_0050 - Block untrusted and unsigned processes that run from USB"
- }
+  }
 "CIS-196" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/86ecd378-a3a0-5d5b-207c-05e6aaca43fc"
    display_name = "Detect network services that have not been authorized or approved"
    description = "CMA_C1700 - Detect network services that have not been authorized or approved"
- }
+  }
 "CIS-197" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/63f63e71-6c3f-9add-4c43-64de23e554a7"
    display_name = "Manage gateways"
    description = "CMA_0363 - Manage gateways"
- }
+  }
 "CIS-198" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/50e81644-923d-33fc-6ebb-9733bc8d1a06"
    display_name = "Perform a trend analysis on threats"
    description = "CMA_0389 - Perform a trend analysis on threats"
- }
+  }
 "CIS-199" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/3c5e0e1a-216f-8f49-0a15-76ed0d8b8e1f"
    display_name = "Perform vulnerability scans"
    description = "CMA_0393 - Perform vulnerability scans"
- }
+  }
 "CIS-200" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/4a6f5cbd-6c6b-006f-2bb1-091af1441bce"
    display_name = "Review malware detections report weekly"
    description = "CMA_0475 - Review malware detections report weekly"
- }
+  }
 "CIS-201" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/fad161f5-5261-401a-22dd-e037bae011bd"
    display_name = "Review threat protection status weekly"
    description = "CMA_0479 - Review threat protection status weekly"
- }
+  }
 "CIS-202" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/ea9d7c95-2f10-8a4d-61d8-7469bd2e8d65"
    display_name = "Update antivirus definitions"
    description = "CMA_0517 - Update antivirus definitions"
- }
+  }
 
  // - 2 Security Center -> Ensure that Windows Defender ATP (WDATP) integration with Security Center is selected
 
@@ -1628,61 +1634,61 @@ defender_policy_id_list = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/3d399cf3-8fc6-0efc-6ab0-1412f1198517"
    display_name = "Block untrusted and unsigned processes that run from USB"
    description = "CMA_0050 - Block untrusted and unsigned processes that run from USB"
- }
+  }
 "CIS-204" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/86ecd378-a3a0-5d5b-207c-05e6aaca43fc"
    display_name = "Detect network services that have not been authorized or approved"
    description = "CMA_C1700 - Detect network services that have not been authorized or approved"
- }
+  }
 "CIS-205" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/63f63e71-6c3f-9add-4c43-64de23e554a7"
    display_name = "Manage gateways"
    description = "CMA_0363 - Manage gateways"
- }
+  }
 "CIS-206" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/50e81644-923d-33fc-6ebb-9733bc8d1a06"
    display_name = "Perform a trend analysis on threats"
    description = "CMA_0389 - Perform a trend analysis on threats"
- }
+  }
 "CIS-207" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/3c5e0e1a-216f-8f49-0a15-76ed0d8b8e1f"
    display_name = "Perform vulnerability scans"
    description = "CMA_0393 - Perform vulnerability scans"
- }
+  }
 "CIS-208" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/4a6f5cbd-6c6b-006f-2bb1-091af1441bce"
    display_name = "Review malware detections report weekly"
    description = "CMA_0475 - Review malware detections report weekly"
- }
+  }
 "CIS-209" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/fad161f5-5261-401a-22dd-e037bae011bd"
    display_name = "Review threat protection status weekly"
    description = "CMA_0479 - Review threat protection status weekly"
- }
+  }
 "CIS-210" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/ea9d7c95-2f10-8a4d-61d8-7469bd2e8d65"
    display_name = "Update antivirus definitions"
    description = "CMA_0517 - Update antivirus definitions"
- }
+  }
 
  // - 3 Storage Accounts -> Ensure that 'Secure transfer required' is set to 'Enabled'
 
- "CIS-211" = {
+  "CIS-211" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/26daf649-22d1-97e9-2a8a-01b182194d59"
-    display_name = "Configure workstations to check for digital certificates"
+    display_name =  "Configure workstations to check for digital certificates"
     description = "CMA_0073 - Configure workstations to check for digital certificates"
   }
- "CIS-212" = {
+  "CIS-212" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/b11697e8-9515-16f1-7a35-477d5c8a1344"
     display_name = "Protect data in transit using encryption"
     description = "CMA_0403 - Protect data in transit using encryption"
   }
- "CIS-213" = {
+  "CIS-213" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/b2d3e5a2-97ab-5497-565a-71172a729d93"
     display_name = "Protect passwords with encryption"
     description = "CMA_0408 - Protect passwords with encryption"
   }
- "CIS-214" = {
+  "CIS-214" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/404c3081-a854-4457-ae30-26a93ef643f9"
     display_name = "Secure transfer to storage accounts should be enabled"
     description = "Audit requirement of Secure transfer in your storage account. Secure transfer is an option that forces your storage account to accept requests only from secure connections (HTTPS). Use of HTTPS ensures authentication between the server and the service and protects data in transit from network layer attacks such as man-in-the-middle, eavesdropping, and session-hijacking"
@@ -1700,17 +1706,17 @@ defender_policy_id_list = {
    display_name = "Audit user account status"
    description = "CMA_0020 - Audit user account status"
   }
- "CIS-217" = {
+  "CIS-217" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/a3e98638-51d4-4e28-910a-60e98c1a756f"
-    display_name = "Configure Azure Aufit capabilities"
+    display_name =  "Configure Azure Aufit capabilities"
     description = "CMA_C1108 - Configure Azure Aufit capabilities"
   }
- "CIS-218" = {
+  "CIS-218" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2f67e567-03db-9d1f-67dc-b6ffb91312f4"
     display_name = "Determine auditable events"
     description = "CMA_0137 - Determine auditable events"
   }
- "CIS-219" = {
+  "CIS-219" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/6625638f-3ba1-7404-5983-0ea33d719d34"
     display_name = "Review audit data"
     description = "CMA_0466 - Review audit data"
@@ -1728,17 +1734,17 @@ defender_policy_id_list = {
     display_name = "Audit user account status"
     description = "CMA_0020 - Audit user account status"
   }
- "CIS-222" = {
+  "CIS-222" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/a3e98638-51d4-4e28-910a-60e98c1a756f"
-    display_name = "Configure Azure Aufit capabilities"
+    display_name =  "Configure Azure Aufit capabilities"
     description = "CMA_C1108 - Configure Azure Aufit capabilities"
   }
- "CIS-223" = {
+  "CIS-223" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2f67e567-03db-9d1f-67dc-b6ffb91312f4"
     display_name = "Determine auditable events"
     description = "CMA_0137 - Determine auditable events"
   }
- "CIS-224" = {
+  "CIS-224" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/6625638f-3ba1-7404-5983-0ea33d719d34"
     display_name = "Review audit data"
     description = "CMA_0466 - Review audit data"
@@ -1746,42 +1752,42 @@ defender_policy_id_list = {
 
  // - 3 Storage Accounts -> Ensure that storage account access keys are periodically regenerated
 
- "CIS-225" = {
+  "CIS-225" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/51e4b233-8ee3-8bdc-8f5f-f33bd0d229b7"
     display_name = "Define a physical key management process"
     description = "CMA_0115 - Define a physical key management process"
   }
- "CIS-226" = {
+  "CIS-226" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/c4ccd607-702b-8ae6-8eeb-fc3339cd4b42"
     display_name = "Define cryptographic use"
     description = "CMA_0120 - Define cryptographic use"
   }
 
- "CIS-227" = {
+  "CIS-227" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/d661e9eb-4e15-5ba1-6f02-cdc467db0d6c"
     display_name = "Define organizational requirements for cryptographic key management"
     description = "CMA_0123 - Define organizational requirements for cryptographic key management"
   }
- "CIS-228" = {
+  "CIS-228" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/7a0ecd94-3699-5273-76a5-edb8499f655a"
     display_name = "Determine assertion requirements"
     description = "CMA_0136 - Determine assertion requirements"
   }
- "CIS-229" = {
+  "CIS-229" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/97d91b33-7050-237b-3e23-a77d57d84e13"
     display_name = "Issue public key certificates"
     description = "CMA_0347 - Issue public key certificates"
   }
- "CIS-230" = {
+  "CIS-230" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/9c276cf3-596f-581a-7fbd-f5e46edaa0f4"
     display_name = "Manage symmetric cryptographic keys"
     description = "CMA_0367 - Manage symmetric cryptographic keys"
- }
- "CIS-231" = {
+  }
+  "CIS-231" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/8d140e8b-76c7-77de-1d46-ed1b2e112444"
     display_name = "Restrict access to private keys"
     description = "CMA_0445 - Restrict access to private keys"
- }
+  }
 
  // - 3 Storage Accounts -> Ensure Storage logging is enabled for Queue service for read, write, and delete requests
 
@@ -1797,33 +1803,33 @@ defender_policy_id_list = {
   }
   "CIS-234" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/a3e98638-51d4-4e28-910a-60e98c1a756f"
-    display_name = "Configure Azure Aufit capabilities"
+    display_name =  "Configure Azure Aufit capabilities"
     description = "CMA_C1108 - Configure Azure Aufit capabilities"
   }
- "CIS-235" = {
+  "CIS-235" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2f67e567-03db-9d1f-67dc-b6ffb91312f4"
     display_name = "Determine auditable events"
     description = "CMA_0137 - Determine auditable events"
   }
- "CIS-236" = {
+  "CIS-236" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/6625638f-3ba1-7404-5983-0ea33d719d34"
     display_name = "Review audit data"
     description = "CMA_0466 - Review audit data"
   }
  // - 3 Storage Accounts -> Ensure that shared access signature tokens expire within an hour
 
- "CIS-237" = {
+  "CIS-237" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/d9d48ffb-0d8c-0bd5-5f31-5a5826d19f10"
     display_name = "Disable authenticators upon termination"
     description = "CMA_0169 - Disable authenticators upon termination"
   }
- "CIS-238" = {
+  "CIS-238" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/32f22cfa-770b-057c-965b-450898425519"
     display_name = "Revoke privileged roles as appropriate"
     description = "CMA_0483 - Revoke privileged roles as appropriate"
   }
 
- "CIS-239" = {
+  "CIS-239" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/4502e506-5f35-0df4-684f-b326e3cc7093"
     display_name = "Terminate user session automatically"
     description = "CMA_C1054 - Terminate user session automatically"
@@ -1831,7 +1837,7 @@ defender_policy_id_list = {
 
  // - 3 Storage Accounts -> Ensure that 'Public access level' is set to Private for blob containers
 
- "CIS-240" = {
+  "CIS-240" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/4fa4b6c0-31ca-4c0d-b10d-24b96f62a751"
     display_name = "[Preview]: Storage account public access should be disallowed"
     description = "Anonymous public read access to containers and blobs in Azure Storage is a convenient way to share data but might present security risks. To prevent data breaches caused by undesired anonymous access, Microsoft recommends preventing public access to a storage account unless your scenario requires it."
@@ -1899,7 +1905,7 @@ defender_policy_id_list = {
    display_name = "Implement controls to secure all media"
    description = "CMA_0314 - Implement controls to secure all media"
   }
- "CIS-256" = {
+  "CIS-256" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/b11697e8-9515-16f1-7a35-477d5c8a1344"
     display_name = "Protect data in transit using encryption"
     description = "CMA_0403 - Protect data in transit using encryption"
@@ -1909,7 +1915,7 @@ defender_policy_id_list = {
    display_name = "Protect special information"
    description = "CMA_0409 - Protect special information"
   }
- "CIS-258" = {
+  "CIS-258" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/6fac406b-40ca-413b-bf8e-0bf964659c25"
     display_name = "Storage accounts should use customer-managed key for encryption"
     description = "Secure your blob and file storage account with greater flexibility using customer-managed keys. When you specify a customer-managed key, that key is used to protect and control access to the key that encrypts your data. Using customer-managed keys provides additional capabilities to control rotation of the key encryption key or cryptographically erase data."
@@ -1932,12 +1938,12 @@ defender_policy_id_list = {
     display_name = "Auditing on SQL server should be enabled"
     description = "Auditing on your SQL Server should be enabled to track database activities across all databases on the server and save them in an audit log."
   }
- "CIS-262" = {
+  "CIS-262" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2f67e567-03db-9d1f-67dc-b6ffb91312f4"
     display_name = "Determine auditable events"
     description = "CMA_0137 - Determine auditable events"
   }
- "CIS-263" = {
+  "CIS-263" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/6625638f-3ba1-7404-5983-0ea33d719d34"
     display_name = "Review audit data"
     description = "CMA_0466 - Review audit data"
@@ -1955,7 +1961,7 @@ defender_policy_id_list = {
    display_name = "Implement controls to secure all media"
    description = "CMA_0314 - Implement controls to secure all media"
   }
- "CIS-266" = {
+  "CIS-266" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/b11697e8-9515-16f1-7a35-477d5c8a1344"
     display_name = "Protect data in transit using encryption"
     description = "CMA_0403 - Protect data in transit using encryption"
@@ -2023,22 +2029,22 @@ defender_policy_id_list = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/3c5e0e1a-216f-8f49-0a15-76ed0d8b8e1f"
    display_name = "Perform vulnerability scans"
    description = "CMA_0393 - Perform vulnerability scans"
- }
+  }
 "CIS-279" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/be38a620-000b-21cf-3cb3-ea151b704c3b"
    display_name = "Remediate information system flaws"
    description = "CMA_0427 - Remediate information system flaws"
- }
+  }
 "CIS-280" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/1b7aa243-30e4-4c9e-bca8-d0d3022b634a"
    display_name = "Vulnerability assessment should be enabled on SQL Managed Instance"
    description = "Audit each SQL Managed Instance which doesn't have recurring vulnerability assessment scans enabled. Vulnerability assessment can discover, track, and help you remediate potential database vulnerabilities."
- }
+  }
 "CIS-281" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/ef2a8f2a-b3d9-49cd-a8a8-9a3aaaf647d9"
    display_name = "Vulnerability assessment should be enabled on your SQL servers"
    description = "Audit Azure SQL servers which do not have recurring vulnerability assessment scans enabled. Vulnerability assessment can discover, track, and help you remediate potential database vulnerabilities."
- }
+  }
 
  // - 4 Database Services -> Ensure that VA setting Periodic Recurring Scans is enabled on a SQL server
 
@@ -2051,16 +2057,16 @@ defender_policy_id_list = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/be38a620-000b-21cf-3cb3-ea151b704c3b"
    display_name = "Remediate information system flaws"
    description = "CMA_0427 - Remediate information system flaws"
- }
+  }
 
  // - 4 Database Services -> Ensure that VA setting Send scan reports to is configured for a SQL server
 
   "CIS-284" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/e3905a3c-97e7-0b4f-15fb-465c0927536f"
-   display_name = "Correlate Vulnerability scan informaiton"
+   display_name =  "Correlate Vulnerability scan informaiton"
    description = "CMA_C1558 - Correlate Vulnerability scan informaiton"
- }
- "CIS-185" = {
+  }
+  "CIS-185" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/3c5e0e1a-216f-8f49-0a15-76ed0d8b8e1f"
     display_name = "Perform vulnerability scans"
     description = "CMA_0393 - Perform vulnerability scans"
@@ -2069,21 +2075,21 @@ defender_policy_id_list = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/be38a620-000b-21cf-3cb3-ea151b704c3b"
    display_name = "Remediate information system flaws"
    description = "CMA_0427 - Remediate information system flaws"
- }
+  }
   "CIS-287" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/057d6cfe-9c4f-4a6d-bc60-14420ea1f1a9"
    display_name = "Vulnerability Assessment settings for SQL server should contain an email address to receive scan reports"
    description = "Ensure that an email address is provided for the 'Send scan reports to' field in the Vulnerability Assessment settings. This email address receives scan result summary after a periodic scan runs on SQL servers."
- }
+  }
 
  // - 4 Database Services -> Ensure that VA setting 'Also send email notifications to admins and subscription owners' is set for a SQL server
 
   "CIS-288" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/e3905a3c-97e7-0b4f-15fb-465c0927536f"
-   display_name = "Correlate Vulnerability scan informaiton"
+   display_name =  "Correlate Vulnerability scan informaiton"
    description = "CMA_C1558 - Correlate Vulnerability scan informaiton"
- }
- "CIS-289" = {
+  }
+  "CIS-289" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/3c5e0e1a-216f-8f49-0a15-76ed0d8b8e1f"
     display_name = "Perform vulnerability scans"
     description = "CMA_0393 - Perform vulnerability scans"
@@ -2092,26 +2098,26 @@ defender_policy_id_list = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/be38a620-000b-21cf-3cb3-ea151b704c3b"
    display_name = "Remediate information system flaws"
    description = "CMA_0427 - Remediate information system flaws"
- }
+  }
 
  // - 4 Database Services -> Ensure 'Enforce SSL connection' is set to 'ENABLED' for PostgreSQL Database Server
 
- "CIS-291" = {
+  "CIS-291" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/26daf649-22d1-97e9-2a8a-01b182194d59"
-    display_name = "Configure workstations to check for digital certificates"
+    display_name =  "Configure workstations to check for digital certificates"
     description = "CMA_0073 - Configure workstations to check for digital certificates"
   }
 "CIS-292" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/d158790f-bfb0-486c-8631-2dc6b4e8e6af"
    display_name = "Enforce SSL connection should be enabled for PostgreSQL database servers"
    description = "Azure Database for PostgreSQL supports connecting your Azure Database for PostgreSQL server to client applications using Secure Sockets Layer (SSL). Enforcing SSL connections between your database server and your client applications helps protect against 'man in the middle' attacks by encrypting the data stream between the server and your application. This configuration enforces that SSL is always enabled for accessing your database server."
- }
- "CIS-293" = {
+  }
+  "CIS-293" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/b11697e8-9515-16f1-7a35-477d5c8a1344"
     display_name = "Protect data in transit using encryption"
     description = "CMA_0403 - Protect data in transit using encryption"
   }
- "CIS-294" = {
+  "CIS-294" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/b2d3e5a2-97ab-5497-565a-71172a729d93"
     display_name = "Protect passwords with encryption"
     description = "CMA_0408 - Protect passwords with encryption"
@@ -2119,22 +2125,22 @@ defender_policy_id_list = {
 
  // - 4 Database Services -> Ensure 'Enforce SSL connection' is set to 'ENABLED' for MySQL Database Server
 
- "CIS-295" = {
+  "CIS-295" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/26daf649-22d1-97e9-2a8a-01b182194d59"
-    display_name = "Configure workstations to check for digital certificates"
+    display_name =  "Configure workstations to check for digital certificates"
     description = "CMA_0073 - Configure workstations to check for digital certificates"
   }
- "CIS-296" = {
+  "CIS-296" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/e802a67a-daf5-4436-9ea6-f6d821dd0c5d"
     display_name = "Enforce SSL connection should be enabled for MySQL database servers"
     description = "Azure Database for MySQL supports connecting your Azure Database for MySQL server to client applications using Secure Sockets Layer (SSL). Enforcing SSL connections between your database server and your client applications helps protect against 'man in the middle' attacks by encrypting the data stream between the server and your application. This configuration enforces that SSL is always enabled for accessing your database server."
   }
- "CIS-297" = {
+  "CIS-297" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/b11697e8-9515-16f1-7a35-477d5c8a1344"
     display_name = "Protect data in transit using encryption"
     description = "CMA_0403 - Protect data in transit using encryption"
   }
- "CIS-298" = {
+  "CIS-298" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/b2d3e5a2-97ab-5497-565a-71172a729d93"
     display_name = "Protect passwords with encryption"
     description = "CMA_0408 - Protect passwords with encryption"
@@ -2152,17 +2158,17 @@ defender_policy_id_list = {
     display_name = "Audit user account status"
     description = "CMA_0020 - Audit user account status"
   }
- "CIS-301" = {
+  "CIS-301" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2f67e567-03db-9d1f-67dc-b6ffb91312f4"
     display_name = "Determine auditable events"
     description = "CMA_0137 - Determine auditable events"
   }
- "CIS-302" = {
+  "CIS-302" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/eb6f77b9-bd53-4e35-a23d-7f65d5f0e43d"
     display_name = "Log checkpoints should be enabled for PostgreSQL database servers"
     description = "This policy helps audit any PostgreSQL databases in your environment without log_checkpoints setting enabled."
   }
- "CIS-303" = {
+  "CIS-303" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/6625638f-3ba1-7404-5983-0ea33d719d34"
     display_name = "Review audit data"
     description = "CMA_0466 - Review audit data"
@@ -2179,17 +2185,17 @@ defender_policy_id_list = {
     display_name = "Audit user account status"
     description = "CMA_0020 - Audit user account status"
   }
- "CIS-306" = {
+  "CIS-306" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2f67e567-03db-9d1f-67dc-b6ffb91312f4"
     display_name = "Determine auditable events"
     description = "CMA_0137 - Determine auditable events"
   }
- "CIS-307" = {
+  "CIS-307" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/eb6f77b9-bd53-4e35-a23d-7f65d5f0e442"
     display_name = "Log connections should be enabled for PostgreSQL database servers"
     description = "This policy helps audit any PostgreSQL databases in your environment without log_connections setting enabled."
   }
- "CIS-308" = {
+  "CIS-308" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/6625638f-3ba1-7404-5983-0ea33d719d34"
     display_name = "Review audit data"
     description = "CMA_0466 - Review audit data"
@@ -2206,17 +2212,17 @@ defender_policy_id_list = {
     display_name = "Audit user account status"
     description = "CMA_0020 - Audit user account status"
   }
- "CIS-311" = {
+  "CIS-311" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2f67e567-03db-9d1f-67dc-b6ffb91312f4"
     display_name = "Determine auditable events"
     description = "CMA_0137 - Determine auditable events"
   }
- "CIS-312" = {
+  "CIS-312" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/eb6f77b9-bd53-4e35-a23d-7f65d5f0e446"
     display_name = "Disconnections should be logged for PostgreSQL database servers."
     description = "This policy helps audit any PostgreSQL databases in your environment without log_disconnections enabled."
   }
- "CIS-313" = {
+  "CIS-313" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/6625638f-3ba1-7404-5983-0ea33d719d34"
     display_name = "Review audit data"
     description = "CMA_0466 - Review audit data"
@@ -2236,15 +2242,15 @@ defender_policy_id_list = {
   }
   "CIS-316" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/5345bb39-67dc-4960-a1bf-427e16b9a0bd"
-    display_name = "Connection throttling should be enabled for PostgreSQL database servers"
+    display_name =  "Connection throttling should be enabled for PostgreSQL database servers"
     description = "This policy helps audit any PostgreSQL databases in your environment without Connection throttling enabled. This setting enables temporary connection throttling per IP for too many invalid password login failures."
   }
- "CIS-2317" = {
+  "CIS-2317" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2f67e567-03db-9d1f-67dc-b6ffb91312f4"
     display_name = "Determine auditable events"
     description = "CMA_0137 - Determine auditable events"
   }
- "CIS-318" = {
+  "CIS-318" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/6625638f-3ba1-7404-5983-0ea33d719d34"
     display_name = "Review audit data"
     description = "CMA_0466 - Review audit data"
@@ -2277,7 +2283,7 @@ defender_policy_id_list = {
 
   "CIS-323" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/59bedbdc-0ba9-39b9-66bb-1d1c192384e6"
-   display_name = "Control information flow"
+   display_name =  "Control information flow"
    description = "CMA_0079 - Control information flow"
   }
   "CIS-324" = {
@@ -2340,7 +2346,7 @@ defender_policy_id_list = {
    display_name = "Implement controls to secure all media"
    description = "CMA_0314 - Implement controls to secure all media"
   }
- "CIS-335" = {
+  "CIS-335" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/b11697e8-9515-16f1-7a35-477d5c8a1344"
     display_name = "Protect data in transit using encryption"
     description = "CMA_0403 - Protect data in transit using encryption"
@@ -2363,7 +2369,7 @@ defender_policy_id_list = {
 
  // - 5 Logging and Monitoring -> Ensure that a 'Diagnostics Setting' exists
 
- "CIS-339" = {
+  "CIS-339" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2f67e567-03db-9d1f-67dc-b6ffb91312f4"
     display_name = "Determine auditable events"
     description = "CMA_0137 - Determine auditable events"
@@ -2381,17 +2387,17 @@ defender_policy_id_list = {
    display_name = "Audit user account status"
    description = "CMA_0020 - Audit user account status"
   }
- "CIS-342" = {
+  "CIS-342" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/a3e98638-51d4-4e28-910a-60e98c1a756f"
-    display_name = "Configure Azure Aufit capabilities"
+    display_name =  "Configure Azure Aufit capabilities"
     description = "CMA_C1108 - Configure Azure Aufit capabilities"
   }
- "CIS-343" = {
+  "CIS-343" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2f67e567-03db-9d1f-67dc-b6ffb91312f4"
     display_name = "Determine auditable events"
     description = "CMA_0137 - Determine auditable events"
   }
- "CIS-345" = {
+  "CIS-345" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/6625638f-3ba1-7404-5983-0ea33d719d34"
     display_name = "Review audit data"
     description = "CMA_0466 - Review audit data"
@@ -2399,12 +2405,12 @@ defender_policy_id_list = {
 
  // - 5 Logging and Monitoring -> Ensure the storage container storing the activity logs is not publicly accessible
 
- "CIS-346" = {
+  "CIS-346" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/4fa4b6c0-31ca-4c0d-b10d-24b96f62a751"
     display_name = "[Preview]: Storage account public access should be disallowed"
     description = "Anonymous public read access to containers and blobs in Azure Storage is a convenient way to share data but might present security risks. To prevent data breaches caused by undesired anonymous access, Microsoft recommends preventing public access to a storage account unless your scenario requires it."
   }
- "CIS-347" = {
+  "CIS-347" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2c843d78-8f64-92b5-6a9b-e8186c0e7eb6"
     display_name = "Enable dual or joint authorization"
     description = "CMA_0226 - Enable dual or joint authorization"
@@ -2417,12 +2423,12 @@ defender_policy_id_list = {
 
  // - 5 Logging and Monitoring -> Ensure the storage account containing the container with activity logs is encrypted with BYOK (Use Your Own Key)
 
- "CIS-349" = {
+  "CIS-349" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2c843d78-8f64-92b5-6a9b-e8186c0e7eb6"
     display_name = "Enable dual or joint authorization"
     description = "CMA_0226 - Enable dual or joint authorization"
   }
- "CIS-350" = {
+  "CIS-350" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/c0559109-6a27-a217-6821-5a6d44f92897"
     display_name = "Maintain integrity of audit system"
     description = "CMA_C1133 - Maintain integrity of audit system"
@@ -2432,7 +2438,7 @@ defender_policy_id_list = {
     display_name = "Protect audit information"
     description = "CMA_0401 - Protect audit information"
   }
- "CIS-352" = {
+  "CIS-352" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/fbb99e8e-e444-4da0-9ff1-75c92f5a85b2"
     display_name = "Storage account containing the container with activity logs must be encrypted with BYOK"
     description = "This policy audits if the Storage account containing the container with activity logs is encrypted with BYOK. The policy works only if the storage account lies on the same subscription as activity logs by design. More information on Azure Storage encryption at rest can be found here https://aka.ms/azurestoragebyok. "
@@ -2450,17 +2456,17 @@ defender_policy_id_list = {
    display_name = "Audit user account status"
    description = "CMA_0020 - Audit user account status"
   }
- "CIS-355" = {
+  "CIS-355" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2f67e567-03db-9d1f-67dc-b6ffb91312f4"
     display_name = "Determine auditable events"
     description = "CMA_0137 - Determine auditable events"
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/6625638f-3ba1-7404-5983-0ea33d719d34"
     display_name = "Resource logs in Key Vault should be enabled"
     description = "Audit enabling of resource logs. This enables you to recreate activity trails to use for investigation purposes when a security incident occurs or when your network is compromised"
   }
- "CIS-357" = {
+  "CIS-357" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/cf820ca0-f99e-4f3e-84fb-66e913812d21"
     display_name = "Review audit data"
     description = "CMA_0466 - Review audit data"
@@ -2468,22 +2474,22 @@ defender_policy_id_list = {
 
  // - 5 Logging and Monitoring -> Ensure that Activity Log Alert exists for Create Policy Assignment
 
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/9622aaa9-5c49-40e2-5bf8-660b7cd23deb"
     display_name = "Alert personnel of information spillage"
     description = "CMA_0007 - Alert personnel of information spillage"
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/c5447c04-a4d7-4ba8-a263-c9ee321a6858"
     display_name = "An activity log alert should exist for specific Policy operations"
     description = "This policy audits specific Policy operations with no activity log alerts configured."
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2b4e134f-1e4c-2bff-573e-082d85479b6e"
     display_name = "Develop an incident response plan"
     description = "CMA_0145 - Develop an incident response plan"
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/af38215f-70c4-0cd6-40c2-c52d86690a45"
     display_name = "Set automated notifications for new and trending cloud applications in your organization"
     description = "CMA_0495 - Set automated notifications for new and trending cloud applications in your organization"
@@ -2492,22 +2498,22 @@ defender_policy_id_list = {
  // - 5 Logging and Monitoring -> Ensure that Activity Log Alert exists for Delete Policy Assignment
 
 
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/9622aaa9-5c49-40e2-5bf8-660b7cd23deb"
     display_name = "Alert personnel of information spillage"
     description = "CMA_0007 - Alert personnel of information spillage"
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/c5447c04-a4d7-4ba8-a263-c9ee321a6858"
     display_name = "An activity log alert should exist for specific Policy operations"
     description = "This policy audits specific Policy operations with no activity log alerts configured."
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2b4e134f-1e4c-2bff-573e-082d85479b6e"
     display_name = "Develop an incident response plan"
     description = "CMA_0145 - Develop an incident response plan"
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/af38215f-70c4-0cd6-40c2-c52d86690a45"
     display_name = "Set automated notifications for new and trending cloud applications in your organization"
     description = "CMA_0495 - Set automated notifications for new and trending cloud applications in your organization"
@@ -2515,22 +2521,22 @@ defender_policy_id_list = {
 
  // - 5 Logging and Monitoring -> Ensure that Activity Log Alert exists for Create or Update Network Security Group
 
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/9622aaa9-5c49-40e2-5bf8-660b7cd23deb"
     display_name = "Alert personnel of information spillage"
     description = "CMA_0007 - Alert personnel of information spillage"
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/b954148f-4c11-4c38-8221-be76711e194a"
     display_name = "An activity log alert should exist for specific Administrative operations"
     description = "This policy audits specific Administrative operations with no activity log alerts configured."
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2b4e134f-1e4c-2bff-573e-082d85479b6e"
     display_name = "Develop an incident response plan"
     description = "CMA_0145 - Develop an incident response plan"
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/af38215f-70c4-0cd6-40c2-c52d86690a45"
     display_name = "Set automated notifications for new and trending cloud applications in your organization"
     description = "CMA_0495 - Set automated notifications for new and trending cloud applications in your organization"
@@ -2538,22 +2544,22 @@ defender_policy_id_list = {
 
  // - 5 Logging and Monitoring -> Ensure that Activity Log Alert exists for Delete Network Security Group
 
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/9622aaa9-5c49-40e2-5bf8-660b7cd23deb"
     display_name = "Alert personnel of information spillage"
     description = "CMA_0007 - Alert personnel of information spillage"
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/b954148f-4c11-4c38-8221-be76711e194a"
     display_name = "An activity log alert should exist for specific Administrative operations"
     description = "This policy audits specific Administrative operations with no activity log alerts configured."
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2b4e134f-1e4c-2bff-573e-082d85479b6e"
     display_name = "Develop an incident response plan"
     description = "CMA_0145 - Develop an incident response plan"
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/af38215f-70c4-0cd6-40c2-c52d86690a45"
     display_name = "Set automated notifications for new and trending cloud applications in your organization"
     description = "CMA_0495 - Set automated notifications for new and trending cloud applications in your organization"
@@ -2561,110 +2567,110 @@ defender_policy_id_list = {
 
  // - 5 Logging and Monitoring -> Ensure that Activity Log Alert exists for Create or Update Network Security Group Rule
 
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/9622aaa9-5c49-40e2-5bf8-660b7cd23deb"
     display_name = "Alert personnel of information spillage"
     description = "CMA_0007 - Alert personnel of information spillage"
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/b954148f-4c11-4c38-8221-be76711e194a"
     display_name = "An activity log alert should exist for specific Administrative operations"
     description = "This policy audits specific Administrative operations with no activity log alerts configured."
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2b4e134f-1e4c-2bff-573e-082d85479b6e"
     display_name = "Develop an incident response plan"
     description = "CMA_0145 - Develop an incident response plan"
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/af38215f-70c4-0cd6-40c2-c52d86690a45"
     display_name = "Set automated notifications for new and trending cloud applications in your organization"
     description = "CMA_0495 - Set automated notifications for new and trending cloud applications in your organization"
   }
  // - 5 Logging and Monitoring -> Ensure that activity log alert exists for the Delete Network Security Group Rule
 
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/9622aaa9-5c49-40e2-5bf8-660b7cd23deb"
     display_name = "Alert personnel of information spillage"
     description = "CMA_0007 - Alert personnel of information spillage"
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/b954148f-4c11-4c38-8221-be76711e194a"
     display_name = "An activity log alert should exist for specific Administrative operations"
     description = "This policy audits specific Administrative operations with no activity log alerts configured."
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2b4e134f-1e4c-2bff-573e-082d85479b6e"
     display_name = "Develop an incident response plan"
     description = "CMA_0145 - Develop an incident response plan"
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/af38215f-70c4-0cd6-40c2-c52d86690a45"
     display_name = "Set automated notifications for new and trending cloud applications in your organization"
     description = "CMA_0495 - Set automated notifications for new and trending cloud applications in your organization"
   }
 
  // - 5 Logging and Monitoring -> Ensure that Activity Log Alert exists for Create or Update Security Solution
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/9622aaa9-5c49-40e2-5bf8-660b7cd23deb"
     display_name = "Alert personnel of information spillage"
     description = "CMA_0007 - Alert personnel of information spillage"
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/3b980d31-7904-4bb7-8575-5665739a8052"
     display_name = "An activity log alert should exist for specific Security operations"
     description = "This policy audits specific Security operations with no activity log alerts configured."
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2b4e134f-1e4c-2bff-573e-082d85479b6e"
     display_name = "Develop an incident response plan"
     description = "CMA_0145 - Develop an incident response plan"
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/af38215f-70c4-0cd6-40c2-c52d86690a45"
     display_name = "Set automated notifications for new and trending cloud applications in your organization"
     description = "CMA_0495 - Set automated notifications for new and trending cloud applications in your organization"
   }
 
  // - 5 Logging and Monitoring -> Ensure that Activity Log Alert exists for Delete Security Solution
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/9622aaa9-5c49-40e2-5bf8-660b7cd23deb"
     display_name = "Alert personnel of information spillage"
     description = "CMA_0007 - Alert personnel of information spillage"
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/3b980d31-7904-4bb7-8575-5665739a8052"
     display_name = "An activity log alert should exist for specific Security operations"
     description = "This policy audits specific Security operations with no activity log alerts configured."
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2b4e134f-1e4c-2bff-573e-082d85479b6e"
     display_name = "Develop an incident response plan"
     description = "CMA_0145 - Develop an incident response plan"
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/af38215f-70c4-0cd6-40c2-c52d86690a45"
     display_name = "Set automated notifications for new and trending cloud applications in your organization"
     description = "CMA_0495 - Set automated notifications for new and trending cloud applications in your organization"
   }
 
  // - 5 Logging and Monitoring -> Ensure that Activity Log Alert exists for Create or Update or Delete SQL Server Firewall Rule
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/9622aaa9-5c49-40e2-5bf8-660b7cd23deb"
     display_name = "Alert personnel of information spillage"
     description = "CMA_0007 - Alert personnel of information spillage"
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/3b980d31-7904-4bb7-8575-5665739a8052"
     display_name = "An activity log alert should exist for specific Security operations"
     description = "This policy audits specific Security operations with no activity log alerts configured."
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2b4e134f-1e4c-2bff-573e-082d85479b6e"
     display_name = "Develop an incident response plan"
     description = "CMA_0145 - Develop an incident response plan"
   }
- "CIS-356" = {
+  "CIS-356" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/af38215f-70c4-0cd6-40c2-c52d86690a45"
     display_name = "Set automated notifications for new and trending cloud applications in your organization"
     description = "CMA_0495 - Set automated notifications for new and trending cloud applications in your organization"
@@ -2692,12 +2698,12 @@ defender_policy_id_list = {
    display_name = "Audit user account status"
    description = "CMA_0020 - Audit user account status"
   }
- "CIS-217" = {
+  "CIS-217" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/a3e98638-51d4-4e28-910a-60e98c1a756f"
-    display_name = "Configure Azure Aufit capabilities"
+    display_name =  "Configure Azure Aufit capabilities"
     description = "CMA_C1108 - Configure Azure Aufit capabilities"
   }
- "CIS-218" = {
+  "CIS-218" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2f67e567-03db-9d1f-67dc-b6ffb91312f4"
     display_name = "Determine auditable events"
     description = "CMA_0137 - Determine auditable events"
@@ -2773,7 +2779,7 @@ defender_policy_id_list = {
    display_name = "Retain terminated user data"
    description = "CMA_0455 - Retain terminated user data"
   }
- "CIS-219" = {
+  "CIS-219" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/6625638f-3ba1-7404-5983-0ea33d719d34"
     display_name = "Review audit data"
     description = "CMA_0466 - Review audit data"
@@ -2783,7 +2789,7 @@ defender_policy_id_list = {
 
   "CIS-323" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/59bedbdc-0ba9-39b9-66bb-1d1c192384e6"
-   display_name = "Control information flow"
+   display_name =  "Control information flow"
    description = "CMA_0079 - Control information flow"
   }
   "CIS-324" = {
@@ -2832,7 +2838,7 @@ defender_policy_id_list = {
   }
   "CIS-272" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/55a7f9a0-6397-7589-05ef-5ed59a8149e7"
-   display_name = "Control physical access"
+   display_name =  "Control physical access"
    description = "CMA_0081 - Control physical access"
   }
   "CIS-272" = {
@@ -2858,7 +2864,7 @@ defender_policy_id_list = {
    display_name = "Implement controls to secure all media"
    description = "CMA_0314 - Implement controls to secure all media"
   }
- "CIS-256" = {
+  "CIS-256" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/b11697e8-9515-16f1-7a35-477d5c8a1344"
     display_name = "Protect data in transit using encryption"
     description = "CMA_0403 - Protect data in transit using encryption"
@@ -2886,7 +2892,7 @@ defender_policy_id_list = {
    display_name = "Implement controls to secure all media"
    description = "CMA_0314 - Implement controls to secure all media"
   }
- "CIS-256" = {
+  "CIS-256" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/b11697e8-9515-16f1-7a35-477d5c8a1344"
     display_name = "Protect data in transit using encryption"
     description = "CMA_0403 - Protect data in transit using encryption"
@@ -2911,7 +2917,7 @@ defender_policy_id_list = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/be38a620-000b-21cf-3cb3-ea151b704c3b"
    display_name = "Remediate information system flaws"
    description = "CMA_0427 - Remediate information system flaws"
- }
+  }
   "PBMM-84" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/86b3d65f-7626-441e-b690-81a8b71cff60"
     display_name = "System updates should be installed on your machines"
@@ -2924,13 +2930,13 @@ defender_policy_id_list = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/3d399cf3-8fc6-0efc-6ab0-1412f1198517"
    display_name = "Block untrusted and unsigned processes that run from USB"
    description = "CMA_0050 - Block untrusted and unsigned processes that run from USB"
- }
- "CIS-131" = {
+  }
+  "CIS-131" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/2c6bee3a-2180-2430-440d-db3c7a849870"
     display_name = "Document security operations"
     description = "CMA_0202 - Document security operations"
-}
- "CIS-161" = {
+  }
+  "CIS-161" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/63f63e71-6c3f-9add-4c43-64de23e554a7"
     display_name = "Manage gateways"
     description = "CMA_0363 - Manage gateways"
@@ -2944,32 +2950,32 @@ defender_policy_id_list = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/50e81644-923d-33fc-6ebb-9733bc8d1a06"
    display_name = "Perform a trend analysis on threats"
    description = "CMA_0389 - Perform a trend analysis on threats"
- }
+  }
 "CIS-163" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/3c5e0e1a-216f-8f49-0a15-76ed0d8b8e1f"
    display_name = "Perform vulnerability scans"
    description = "CMA_0393 - Perform vulnerability scans"
- }
+  }
 "CIS-164" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/4a6f5cbd-6c6b-006f-2bb1-091af1441bce"
    display_name = "Review malware detections report weekly"
    description = "CMA_0475 - Review malware detections report weekly"
- }
+  }
 "CIS-165" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/fad161f5-5261-401a-22dd-e037bae011bd"
    display_name = "Review threat protection status weekly"
    description = "CMA_0479 - Review threat protection status weekly"
- }
+  }
 "CIS-166" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/ea9d7c95-2f10-8a4d-61d8-7469bd2e8d65"
    display_name = "Update antivirus definitions"
    description = "CMA_0517 - Update antivirus definitions"
- }
+  }
 "CIS-165" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/db28735f-518f-870e-15b4-49623cbe3aa0"
    display_name = "Verify software, firmware and information integrity"
    description = "CMA_0542 - Verify software, firmware and information integrity"
- }
+  }
 
  // - 7 Virtual Machines -> Ensure that VHD's are encrypted
 
@@ -2983,7 +2989,7 @@ defender_policy_id_list = {
    display_name = "Implement controls to secure all media"
    description = "CMA_0314 - Implement controls to secure all media"
   }
- "CIS-256" = {
+  "CIS-256" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/b11697e8-9515-16f1-7a35-477d5c8a1344"
     display_name = "Protect data in transit using encryption"
     description = "CMA_0403 - Protect data in transit using encryption"
@@ -2996,89 +3002,89 @@ defender_policy_id_list = {
 
  // - 8 Other Security Considerations -> Ensure that the expiration date is set on all keys
 
- "CIS-225" = {
+  "CIS-225" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/51e4b233-8ee3-8bdc-8f5f-f33bd0d229b7"
     display_name = "Define a physical key management process"
     description = "CMA_0115 - Define a physical key management process"
   }
- "CIS-226" = {
+  "CIS-226" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/c4ccd607-702b-8ae6-8eeb-fc3339cd4b42"
     display_name = "Define cryptographic use"
     description = "CMA_0120 - Define cryptographic use"
   }
- "CIS-227" = {
+  "CIS-227" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/d661e9eb-4e15-5ba1-6f02-cdc467db0d6c"
     display_name = "Define organizational requirements for cryptographic key management"
     description = "CMA_0123 - Define organizational requirements for cryptographic key management"
   }
- "CIS-228" = {
+  "CIS-228" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/7a0ecd94-3699-5273-76a5-edb8499f655a"
     display_name = "Determine assertion requirements"
     description = "CMA_0136 - Determine assertion requirements"
   }
- "CIS-229" = {
+  "CIS-229" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/97d91b33-7050-237b-3e23-a77d57d84e13"
     display_name = "Issue public key certificates"
     description = "CMA_0347 - Issue public key certificates"
   }
- "CIS-225" = {
+  "CIS-225" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/152b15f7-8e1f-4c1f-ab71-8c010ba5dbc0"
     display_name = "Key Vault keys should have an expiration date"
-    description = "Cryptographic keys should have a defined expiration date and not be permanent. Keys that are valid forever provide a potential attacker with more time to compromise the key. It is a recommended security practice to set expiration dates on cryptographic keys."
+    description =  "Cryptographic keys should have a defined expiration date and not be permanent. Keys that are valid forever provide a potential attacker with more time to compromise the key. It is a recommended security practice to set expiration dates on cryptographic keys."
   }
- "CIS-230" = {
+  "CIS-230" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/9c276cf3-596f-581a-7fbd-f5e46edaa0f4"
     display_name = "Manage symmetric cryptographic keys"
     description = "CMA_0367 - Manage symmetric cryptographic keys"
- }
- "CIS-231" = {
+  }
+  "CIS-231" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/8d140e8b-76c7-77de-1d46-ed1b2e112444"
     display_name = "Restrict access to private keys"
     description = "CMA_0445 - Restrict access to private keys"
- }
+  }
 
  // - 8 Other Security Considerations -> Ensure that the expiration date is set on all Secrets
 
- "CIS-225" = {
+  "CIS-225" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/51e4b233-8ee3-8bdc-8f5f-f33bd0d229b7"
     display_name = "Define a physical key management process"
     description = "CMA_0115 - Define a physical key management process"
   }
- "CIS-226" = {
+  "CIS-226" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/c4ccd607-702b-8ae6-8eeb-fc3339cd4b42"
     display_name = "Define cryptographic use"
     description = "CMA_0120 - Define cryptographic use"
   }
- "CIS-227" = {
+  "CIS-227" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/d661e9eb-4e15-5ba1-6f02-cdc467db0d6c"
     display_name = "Define organizational requirements for cryptographic key management"
     description = "CMA_0123 - Define organizational requirements for cryptographic key management"
   }
- "CIS-228" = {
+  "CIS-228" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/7a0ecd94-3699-5273-76a5-edb8499f655a"
     display_name = "Determine assertion requirements"
     description = "CMA_0136 - Determine assertion requirements"
   }
- "CIS-229" = {
+  "CIS-229" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/97d91b33-7050-237b-3e23-a77d57d84e13"
     display_name = "Issue public key certificates"
     description = "CMA_0347 - Issue public key certificates"
   }
- "CIS-225" = {
+  "CIS-225" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/98728c90-32c7-4049-8429-847dc0f4fe37"
     display_name = "Key Vault secrets should have an expiration date"
     description = "Secrets should have a defined expiration date and not be permanent. Secrets that are valid forever provide a potential attacker with more time to compromise them. It is a recommended security practice to set expiration dates on secrets."
   }
- "CIS-230" = {
+  "CIS-230" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/9c276cf3-596f-581a-7fbd-f5e46edaa0f4"
     display_name = "Manage symmetric cryptographic keys"
     description = "CMA_0367 - Manage symmetric cryptographic keys"
- }
- "CIS-231" = {
+  }
+  "CIS-231" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/8d140e8b-76c7-77de-1d46-ed1b2e112444"
     display_name = "Restrict access to private keys"
     description = "CMA_0445 - Restrict access to private keys"
- }
+  }
 
 
 
@@ -3107,4 +3113,4 @@ defender_policy_id_list = {
 
 
 
-}
+  }
