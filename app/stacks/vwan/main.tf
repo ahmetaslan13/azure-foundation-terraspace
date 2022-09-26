@@ -9,7 +9,7 @@ module "resource_group" {
 // *** Create Virtual WAN ***
 module "Virtual_wan" {
   source              = "../../modules/vwan"
-  virtual_vwan_name = var.virtual_vwan_name
+  virtual_vwan_name   = var.virtual_vwan_name
   resource_group_name = module.resource_group.name
   location            = module.resource_group.location
 }
@@ -17,7 +17,7 @@ module "Virtual_wan" {
 // *** Create Virtual WAN ***
 module "virtual_hub" {
   source              = "../../modules/vhub"
-  virtual_hub_name = var.virtual_hub_name
+  virtual_hub_name    = var.virtual_hub_name
   resource_group_name = module.resource_group.name
   location            = module.resource_group.location
   virtual_wan_id      = module.Virtual_wan.virtual_vwan_id

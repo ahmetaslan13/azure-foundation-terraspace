@@ -7,7 +7,7 @@ module "resource_group" {
 }
 
 // *** Create Linux Virtual Machine ***
-module "lx_windows" {
+module "lx_virtual_machine" {
   source                        = "../../modules/vm_linux"
   vm_name                       = var.vm_name
   resource_group_name           = module.resource_group.name

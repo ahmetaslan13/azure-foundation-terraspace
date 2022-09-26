@@ -1,15 +1,21 @@
-// *** Linux Virtual Machine Scale Set Variables ***
-variable "vm_scale_set_name" {
-  description = ""
-  type        = string
-}
-
+// *** Resource Group Variables ***
 variable "resource_group_name" {
   description = ""
   type        = string
 }
 
 variable "location" {
+  description = ""
+  type        = string
+}
+
+variable "tags" {
+  description = ""
+  type        = map(any)
+}
+
+// *** Linux Virtual Machine Scale Set Variables ***
+variable "vm_scale_set_name" {
   description = ""
   type        = string
 }
@@ -40,7 +46,7 @@ variable "public_key" {
   type        = string
 }
 
-// *** Source Image Reference Variables ***
+// *** OS Disk Variables ***
 variable "caching" {
   description = ""
   type        = string

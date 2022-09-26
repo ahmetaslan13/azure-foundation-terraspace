@@ -4,19 +4,19 @@ resource "azurerm_linux_virtual_machine_scale_set" "vm_scale_set_linux" {
   resource_group_name = var.resource_group_name
   location            = var.location
   sku                 = var.sku
-  instances           = var.instance
+  instances           = var.instances
   admin_username      = var.admin_username
 
   admin_ssh_key {
-    username   = var.admin_username
+    username   = var.username
     public_key = file(var.public_key)
   }
 
   source_image_reference {
     publisher = var.publisher
     offer     = var.offer
-    sku       = var.sku
-    version   = var.version
+    sku       = var.source_image_reference_sku
+    version   = var.source_image_reference_version
   }
 
   os_disk {
@@ -29,10 +29,10 @@ resource "azurerm_linux_virtual_machine_scale_set" "vm_scale_set_linux" {
     primary = var.network_interface_primary
 
     ip_configuration {
-      name    = var.ip_configuration_name
+      name    = var.nic_ip_configuration_name
       primary = var.nic_ip_configuration_primary
       //Set subnet id to VM
-      subnet_id = var.subnet_id[3]
+      subnet_id = var.subnet_id[0]
     }
   }
 }

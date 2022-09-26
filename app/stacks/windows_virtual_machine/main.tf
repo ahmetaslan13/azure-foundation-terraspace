@@ -7,7 +7,7 @@ module "resource_group" {
 }
 
 // *** Create Windows Virtual Machine ***
-module "win_windows" {
+module "win_virtual_machine" {
   source                        = "../../modules/vm_windows"
   vm_name                       = var.vm_name
   resource_group_name           = module.resource_group.name
