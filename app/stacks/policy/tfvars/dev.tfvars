@@ -1751,7 +1751,6 @@ defender_policy_id_list = {
     display_name = "Define a physical key management process"
     description = "CMA_0115 - Define a physical key management process"
   }
-
  "CIS-226" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/c4ccd607-702b-8ae6-8eeb-fc3339cd4b42"
     display_name = "Define cryptographic use"
@@ -1778,7 +1777,6 @@ defender_policy_id_list = {
     display_name = "Manage symmetric cryptographic keys"
     description = "CMA_0367 - Manage symmetric cryptographic keys"
  }
-
  "CIS-231" = {
     id = "/providers/Microsoft.Authorization/policyDefinitions/8d140e8b-76c7-77de-1d46-ed1b2e112444"
     display_name = "Restrict access to private keys"
@@ -2919,6 +2917,188 @@ defender_policy_id_list = {
     display_name = "System updates should be installed on your machines"
     description = "Missing security system updates on your servers will be monitored by Azure Security Center as recommendations"
   }
+
+ // - 7 Virtual Machines -> Ensure that the endpoint protection for all Virtual Machines is installed
+
+"CIS-159" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/3d399cf3-8fc6-0efc-6ab0-1412f1198517"
+   display_name = "Block untrusted and unsigned processes that run from USB"
+   description = "CMA_0050 - Block untrusted and unsigned processes that run from USB"
+ }
+ "CIS-131" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/2c6bee3a-2180-2430-440d-db3c7a849870"
+    display_name = "Document security operations"
+    description = "CMA_0202 - Document security operations"
+}
+ "CIS-161" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/63f63e71-6c3f-9add-4c43-64de23e554a7"
+    display_name = "Manage gateways"
+    description = "CMA_0363 - Manage gateways"
+  }
+  "PBMM-88" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/af6cd1bd-1635-48cb-bde7-5b15693900b9"
+    display_name = "Monitor missing Endpoint Protection in Azure Security Center"
+    description = "Servers without an installed Endpoint Protection agent will be monitored by Azure Security Center as recommendations"
+  }
+"CIS-162" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/50e81644-923d-33fc-6ebb-9733bc8d1a06"
+   display_name = "Perform a trend analysis on threats"
+   description = "CMA_0389 - Perform a trend analysis on threats"
+ }
+"CIS-163" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/3c5e0e1a-216f-8f49-0a15-76ed0d8b8e1f"
+   display_name = "Perform vulnerability scans"
+   description = "CMA_0393 - Perform vulnerability scans"
+ }
+"CIS-164" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/4a6f5cbd-6c6b-006f-2bb1-091af1441bce"
+   display_name = "Review malware detections report weekly"
+   description = "CMA_0475 - Review malware detections report weekly"
+ }
+"CIS-165" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/fad161f5-5261-401a-22dd-e037bae011bd"
+   display_name = "Review threat protection status weekly"
+   description = "CMA_0479 - Review threat protection status weekly"
+ }
+"CIS-166" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/ea9d7c95-2f10-8a4d-61d8-7469bd2e8d65"
+   display_name = "Update antivirus definitions"
+   description = "CMA_0517 - Update antivirus definitions"
+ }
+"CIS-165" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/db28735f-518f-870e-15b4-49623cbe3aa0"
+   display_name = "Verify software, firmware and information integrity"
+   description = "CMA_0542 - Verify software, firmware and information integrity"
+ }
+
+ // - 7 Virtual Machines -> Ensure that VHD's are encrypted
+
+  "CIS-254" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/3c9aa856-6b86-35dc-83f4-bc72cec74dea"
+   display_name = "Establish a data leakage management procedure"
+   description = "CMA_0255 - Establish a data leakage management procedure"
+  }
+  "CIS-255" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/e435f7e3-0dd9-58c9-451f-9b44b96c0232"
+   display_name = "Implement controls to secure all media"
+   description = "CMA_0314 - Implement controls to secure all media"
+  }
+ "CIS-256" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/b11697e8-9515-16f1-7a35-477d5c8a1344"
+    display_name = "Protect data in transit using encryption"
+    description = "CMA_0403 - Protect data in transit using encryption"
+  }
+  "CIS-257" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/a315c657-4a00-8eba-15ac-44692ad24423"
+   display_name = "Protect special information"
+   description = "CMA_0409 - Protect special information"
+  }
+
+ // - 8 Other Security Considerations -> Ensure that the expiration date is set on all keys
+
+ "CIS-225" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/51e4b233-8ee3-8bdc-8f5f-f33bd0d229b7"
+    display_name = "Define a physical key management process"
+    description = "CMA_0115 - Define a physical key management process"
+  }
+ "CIS-226" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/c4ccd607-702b-8ae6-8eeb-fc3339cd4b42"
+    display_name = "Define cryptographic use"
+    description = "CMA_0120 - Define cryptographic use"
+  }
+ "CIS-227" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/d661e9eb-4e15-5ba1-6f02-cdc467db0d6c"
+    display_name = "Define organizational requirements for cryptographic key management"
+    description = "CMA_0123 - Define organizational requirements for cryptographic key management"
+  }
+ "CIS-228" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/7a0ecd94-3699-5273-76a5-edb8499f655a"
+    display_name = "Determine assertion requirements"
+    description = "CMA_0136 - Determine assertion requirements"
+  }
+ "CIS-229" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/97d91b33-7050-237b-3e23-a77d57d84e13"
+    display_name = "Issue public key certificates"
+    description = "CMA_0347 - Issue public key certificates"
+  }
+ "CIS-225" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/152b15f7-8e1f-4c1f-ab71-8c010ba5dbc0"
+    display_name = "Key Vault keys should have an expiration date"
+    description = "Cryptographic keys should have a defined expiration date and not be permanent. Keys that are valid forever provide a potential attacker with more time to compromise the key. It is a recommended security practice to set expiration dates on cryptographic keys."
+  }
+ "CIS-230" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/9c276cf3-596f-581a-7fbd-f5e46edaa0f4"
+    display_name = "Manage symmetric cryptographic keys"
+    description = "CMA_0367 - Manage symmetric cryptographic keys"
+ }
+ "CIS-231" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/8d140e8b-76c7-77de-1d46-ed1b2e112444"
+    display_name = "Restrict access to private keys"
+    description = "CMA_0445 - Restrict access to private keys"
+ }
+
+ // - 8 Other Security Considerations -> Ensure that the expiration date is set on all Secrets
+
+ "CIS-225" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/51e4b233-8ee3-8bdc-8f5f-f33bd0d229b7"
+    display_name = "Define a physical key management process"
+    description = "CMA_0115 - Define a physical key management process"
+  }
+ "CIS-226" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/c4ccd607-702b-8ae6-8eeb-fc3339cd4b42"
+    display_name = "Define cryptographic use"
+    description = "CMA_0120 - Define cryptographic use"
+  }
+ "CIS-227" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/d661e9eb-4e15-5ba1-6f02-cdc467db0d6c"
+    display_name = "Define organizational requirements for cryptographic key management"
+    description = "CMA_0123 - Define organizational requirements for cryptographic key management"
+  }
+ "CIS-228" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/7a0ecd94-3699-5273-76a5-edb8499f655a"
+    display_name = "Determine assertion requirements"
+    description = "CMA_0136 - Determine assertion requirements"
+  }
+ "CIS-229" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/97d91b33-7050-237b-3e23-a77d57d84e13"
+    display_name = "Issue public key certificates"
+    description = "CMA_0347 - Issue public key certificates"
+  }
+ "CIS-225" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/98728c90-32c7-4049-8429-847dc0f4fe37"
+    display_name = "Key Vault secrets should have an expiration date"
+    description = "Secrets should have a defined expiration date and not be permanent. Secrets that are valid forever provide a potential attacker with more time to compromise them. It is a recommended security practice to set expiration dates on secrets."
+  }
+ "CIS-230" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/9c276cf3-596f-581a-7fbd-f5e46edaa0f4"
+    display_name = "Manage symmetric cryptographic keys"
+    description = "CMA_0367 - Manage symmetric cryptographic keys"
+ }
+ "CIS-231" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/8d140e8b-76c7-77de-1d46-ed1b2e112444"
+    display_name = "Restrict access to private keys"
+    description = "CMA_0445 - Restrict access to private keys"
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
