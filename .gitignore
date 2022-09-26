@@ -1,7 +1,7 @@
 # Mac/OSX
 .DS_Store
  
- #Terraspace
+#Terraspace
 *.gem
 *.rbc
 .terraspace-cache
