@@ -2781,17 +2781,144 @@ defender_policy_id_list = {
     description = "CMA_0466 - Review audit data"
   }
 
+ // - 6 Networking -> Ensure no SQL Databases allow ingress 0.0.0.0/0 (ANY IP)
 
+  "CIS-323" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/59bedbdc-0ba9-39b9-66bb-1d1c192384e6"
+   display_name = "Control information flow"
+   description = "CMA_0079 - Control information flow"
+  }
+  "CIS-324" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/79365f13-8ba4-1f6c-2ac4-aa39929f56d0"
+   display_name = "Employ flow control mechanisms of encrypted information"
+   description = "CMA_0211 - Employ flow control mechanisms of encrypted information"
+  }
 
+ // - 6 Networking -> Ensure no SQL Databases allow ingress 0.0.0.0/0 (ANY IP)
 
+  "CIS-269" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/1ecb79d7-1a06-9a3b-3be8-f434d04d1ec1"
+   display_name = "Adhere to retention periods defined"
+   description = "CMA_0004 - Adhere to retention periods defined"
+  }
+  "CIS-271" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/efef28d0-3226-966a-a1e8-70e89c1b30bc"
+   display_name = "Retain security policies and procedures"
+   description = "CMA_0454 - Retain security policies and procedures"
+  }
+  "CIS-272" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/7c7032fe-9ce6-9092-5890-87a1a3755db1"
+   display_name = "Retain terminated user data"
+   description = "CMA_0455 - Retain terminated user data"
+  }
 
+ // - 6 Networking -> Ensure that Network Watcher is 'Enabled'
 
+  "CIS-272" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/b6e2945c-0b7b-40f5-9233-7a5323b5cdc6"
+   display_name = "Network Watcher should be enabled"
+   description = "Network Watcher is a regional service that enables you to monitor and diagnose conditions at a network scenario level in, to, and from Azure. Scenario level monitoring enables you to diagnose problems at an end to end network level view. It is required to have a network watcher resource group to be created in every region where a virtual network is present. An alert is enabled if a network watcher resource group is not available in a particular region."
+  }
+  "CIS-272" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/ece8bb17-4080-5127-915f-dc7267ee8549"
+   display_name = "Verify security functions"
+   description = "CMA_C1708 - Verify security functions"
+  }
 
+ // - 7 Virtual Machines -> Ensure Virtual Machines are utilizing Managed Disks
 
+  "CIS-272" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/06a78e20-9358-41c9-923c-fb736d382a4d"
+   display_name = "Audit VMs that do not use managed disks"
+   description = "This policy audits VMs that do not use managed disks"
+  }
+  "CIS-272" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/55a7f9a0-6397-7589-05ef-5ed59a8149e7"
+   display_name = "Control physical access"
+   description = "CMA_0081 - Control physical access"
+  }
+  "CIS-272" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/e603da3a-8af7-4f8a-94cb-1bcc0e0333d2"
+   display_name = "Manage the input, output, processing, and storage of data"
+   description = "CMA_0369 - Manage the input, output, processing, and storage of data"
+  }
+  "CIS-272" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/e23444b9-9662-40f3-289e-6d25c02b48fa"
+   display_name = "Review label activity and analytics"
+   description = "CMA_0474 - Review label activity and analytics"
+  }
 
+ // - 7 Virtual Machines -> Ensure that 'OS and Data' disks are encrypted with CMK
 
+  "CIS-254" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/3c9aa856-6b86-35dc-83f4-bc72cec74dea"
+   display_name = "Establish a data leakage management procedure"
+   description = "CMA_0255 - Establish a data leakage management procedure"
+  }
+  "CIS-255" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/e435f7e3-0dd9-58c9-451f-9b44b96c0232"
+   display_name = "Implement controls to secure all media"
+   description = "CMA_0314 - Implement controls to secure all media"
+  }
+ "CIS-256" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/b11697e8-9515-16f1-7a35-477d5c8a1344"
+    display_name = "Protect data in transit using encryption"
+    description = "CMA_0403 - Protect data in transit using encryption"
+  }
+  "CIS-257" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/a315c657-4a00-8eba-15ac-44692ad24423"
+   display_name = "Protect special information"
+   description = "CMA_0409 - Protect special information"
+  }
+  "CIS-81" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/0961003e-5a0a-4549-abde-af6a37f2724d"
+    display_name = "Virtual machines should encrypt temp disks, caches, and data flows between Compute and Storage resources"
+    description = "By default, a virtual machine's OS and data disks are encrypted-at-rest using platform-managed keys. Temp disks, data caches and data flowing between compute and storage aren't encrypted. Disregard this recommendation if: 1. using encryption-at-host, or 2. server-side encryption on Managed Disks meets your security requirements. Learn more in: Server-side encryption of Azure Disk Storage: https://aka.ms/disksse, Different disk encryption offerings: https://aka.ms/diskencryptioncomparison"
+  }
 
+ // - 7 Virtual Machines -> Ensure that 'Unattached disks' are encrypted with CMK
 
+  "CIS-254" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/3c9aa856-6b86-35dc-83f4-bc72cec74dea"
+   display_name = "Establish a data leakage management procedure"
+   description = "CMA_0255 - Establish a data leakage management procedure"
+  }
+  "CIS-255" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/e435f7e3-0dd9-58c9-451f-9b44b96c0232"
+   display_name = "Implement controls to secure all media"
+   description = "CMA_0314 - Implement controls to secure all media"
+  }
+ "CIS-256" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/b11697e8-9515-16f1-7a35-477d5c8a1344"
+    display_name = "Protect data in transit using encryption"
+    description = "CMA_0403 - Protect data in transit using encryption"
+  }
+  "CIS-257" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/a315c657-4a00-8eba-15ac-44692ad24423"
+   display_name = "Protect special information"
+   description = "CMA_0409 - Protect special information"
+  }
+
+ // - 7 Virtual Machines -> Ensure that 'Unattached disks' are encrypted with CMK
+
+  "CIS-257" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/c0e996f8-39cf-4af9-9f45-83fbde810432"
+   display_name = "Only approved VM extensions should be installed"
+   description = "This policy governs the virtual machine extensions that are not approved."
+  }
+
+ // - 7 Virtual Machines -> Ensure that the latest OS Patches for all Virtual Machines are applied
+
+"CIS-279" = {
+   id = "/providers/Microsoft.Authorization/policyDefinitions/be38a620-000b-21cf-3cb3-ea151b704c3b"
+   display_name = "Remediate information system flaws"
+   description = "CMA_0427 - Remediate information system flaws"
+ }
+  "PBMM-84" = {
+    id = "/providers/Microsoft.Authorization/policyDefinitions/86b3d65f-7626-441e-b690-81a8b71cff60"
+    display_name = "System updates should be installed on your machines"
+    description = "Missing security system updates on your servers will be monitored by Azure Security Center as recommendations"
+  }
 
 
 
