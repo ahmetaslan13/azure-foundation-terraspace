@@ -1,3 +1,6 @@
+                 /**************************************
+                  *** Azure Domain Name Server (DNS) ***
+                  **************************************/
 // *** Domain Name Server (DNS) ***
 resource "azurerm_dns_zone" "dns" {
   name                = var.dns_name
