@@ -9,3 +9,9 @@ variable "defender_policy_id_list" {
   description = ""
   type        = any
 }
+
+// *** Create Azure Management Group Policy Assignment - Initiatives Variables ***
+variable "initiative_id_list" {
+  description = ""
+  type        = any
+}

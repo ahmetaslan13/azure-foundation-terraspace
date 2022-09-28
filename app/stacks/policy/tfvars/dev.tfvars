@@ -1,13 +1,30 @@
 // *** Azure Policy Values ***
 
-// *** PMBB Policy List Values *** 
-
-test = {
-  "test" = {
-    te = "as"
+// *** Initiative Policy List Values *** 
+initiative_id_list = {
+  "init-1" = {
+    id = "/providers/Microsoft.Authorization/policySetDefinitions/612b5213-9160-4969-8578-1518bd2a000c"
+    display_name = "CIS Microsoft Azure Foundations Benchmark v1.3.0"
+    description = "The Center for Internet Security (CIS) is a nonprofit entity whose mission is to 'identify, develop, validate, promote, and sustain best practice solutions for cyberdefense.' CIS benchmarks are configuration baselines and best practices for securely configuring a system. These policies address a subset of CIS Microsoft Azure Foundations Benchmark v1.3.0 controls. For more information, visit https://aka.ms/cisazure130-initiative" 
   }
+    "init-2" = {
+    id = "/providers/Microsoft.Authorization/policySetDefinitions/4c4a5f27-de81-430b-b4e5-9cbd50595a87" // Hata aliyorum.
+    display_name = "Canada Federal PBMM"
+    description = "This initiative includes policies that address a subset of Canada Federal PBMM controls. Additional policies will be added in upcoming releases. For more information, visit https://aka.ms/canadafederalpbmm-init."
+    }
+    "init-3" = {
+    id = "/providers/Microsoft.Authorization/policySetDefinitions/89c6cddc-1c73-4ac1-b19c-54d1a15a42f2"  // Hata aliyorum.
+    display_name = "ISO 27001:2013"
+    description = "The International Organization for Standardization (ISO) 27001 standard provides requirements for establishing, implementing, maintaining, and continuously improving an Information Security Management System (ISMS). These policies address a subset of ISO 27001:2013 controls. Additional policies will be added in upcoming releases. For more information, visit https://aka.ms/iso27001-init"
+    }
+    "init-4" = {
+    id = "/providers/Microsoft.Authorization/policySetDefinitions/03055927-78bd-4236-86c0-f36125a10dc9"  // Hata aliyorum.
+    display_name = "NIST SP 800-171 Rev. 2"
+    description = "The US National Institute of Standards and Technology (NIST) promotes and maintains measurement standards and guidelines to help protect the information and information systems of federal agencies. In response to Executive Order 13556 on managing controlled unclassified information (CUI), it published NIST SP 800-171. These policies address a subset of NIST SP 800-171 Rev. 2 controls. For more information, visit https://docs.microsoft.com/azure/compliance/offerings/offering-nist-800-171"
+    } 
 }
 
+// *** PMBB Policy List Values *** 
 pbmm_policy_id_list = {
 
   // - Access Control -> Account Management
@@ -2763,7 +2780,7 @@ defender_policy_id_list = {
    display_name = "Resource logs in Service Bus should be enabled"
    description = "Audit enabling of resource logs. This enables you to recreate activity trails to use for investigation purposes; when a security incident occurs or when your network is compromised"
   }
-  -
+  
   "CIS-410" = {
    id = "/providers/Microsoft.Authorization/policyDefinitions/7c1b1214-f927-48bf-8882-84f0af6588b1"
    display_name = "Resource logs in Virtual Machine Scale Sets should be enabled"
