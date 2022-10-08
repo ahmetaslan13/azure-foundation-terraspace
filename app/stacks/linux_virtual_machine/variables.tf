@@ -3,12 +3,10 @@ variable "resource_group_name" {
   description = ""
   type        = string
 }
-
 variable "location" {
   description = ""
   type        = string
 }
-
 variable "tags" {
   description = ""
   type        = map(any)
@@ -19,12 +17,10 @@ variable "ip_configuration_name" {
   description = ""
   type        = string
 }
-
 variable "private_ip_address_allocation" {
   description = ""
   type        = string
 }
-
 variable "subnet_id" {
   description = ""
   type        = list(any)
@@ -35,17 +31,14 @@ variable "vm_name" {
   description = ""
   type        = string
 }
-
 variable "vm_size" {
   description = ""
   type        = string
 }
-
 variable "linux_admin_username" {
   description = ""
   type        = string
 }
-
 variable "public_key" {
   description = ""
   type        = string
@@ -56,7 +49,6 @@ variable "caching" {
   description = ""
   type        = string
 }
-
 variable "storage_account_type" {
   description = ""
   type        = string
@@ -67,17 +59,14 @@ variable "publisher" {
   description = ""
   type        = string
 }
-
 variable "offer" {
   description = ""
   type        = string
 }
-
 variable "sku" {
   description = ""
   type        = string
 }
-
 variable "source_image_reference_version" {
   description = ""
   type        = string

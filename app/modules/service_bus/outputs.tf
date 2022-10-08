@@ -1,1 +1,1 @@
-// *** Service Bus Outputs ***
+// *** Azure Service Bus Outputs ***

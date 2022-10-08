@@ -1,2 +1,2 @@
-// *** VM Windows Outputs ***
+// *** Azure Virtual Machine Windows Outputs ***
 

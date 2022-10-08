@@ -1,1 +1,1 @@
-// *** Virtual Hub Outputs ***
+// *** Azure Virtual Hub Outputs ***

@@ -1,4 +1,4 @@
-// *** Virtual Hub ***
+// *** Azure Virtual Hub ***
 resource "azurerm_virtual_hub" "vhub" {
   name                = var.virtual_hub_name
   resource_group_name = var.resource_group_name

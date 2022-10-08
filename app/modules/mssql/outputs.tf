@@ -1,4 +1,4 @@
-// *** Mssql Server Outputs ***
+// *** Azure Mssql Server Outputs ***
 
 
-// *** Mssql Database Outputs ***
+// *** Azure Mssql Database Outputs ***

@@ -1,4 +1,5 @@
 // *** Azure Policy Values ***
+management_group_id = "/providers/Microsoft.Management/managementGroups/workspace-test"
 
 // *** Initiative Policy List Values *** 
 initiative_id_list = {

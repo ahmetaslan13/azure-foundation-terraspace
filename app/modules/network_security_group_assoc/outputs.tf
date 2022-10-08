@@ -1,1 +1,1 @@
-// *** Network Security Group Association Outputs ***
+// *** Azure Network Security Group Association Outputs ***

@@ -1,2 +1,2 @@
-// *** Log Analytics Outputs ***
+// *** Azure Log Analytics Outputs ***
 

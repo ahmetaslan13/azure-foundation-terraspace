@@ -1,4 +1,4 @@
-// *** Windows Virtual Machine Scale Set ***
+// *** Azure Windows Virtual Machine Scale Set ***
 resource "azurerm_windows_virtual_machine_scale_set" "vm_scale_set_windows" {
   name                = var.vm_scale_set_name
   resource_group_name = var.resource_group_name
@@ -7,23 +7,19 @@ resource "azurerm_windows_virtual_machine_scale_set" "vm_scale_set_windows" {
   instances           = var.instance
   admin_username      = var.admin_username
   admin_password      = var.admin_password
-
   source_image_reference {
     publisher = var.publisher
     offer     = var.offer
     sku       = var.sku
     version   = var.version
   }
-
   os_disk {
     caching              = var.caching
     storage_account_type = var.storage_account_type
   }
-
   network_interface {
     name    = var.network_interface_name
     primary = var.network_interface_primary
-
     ip_configuration {
       name    = var.ip_configuration_name
       primary = var.nic_ip_configuration_primary

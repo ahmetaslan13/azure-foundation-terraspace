@@ -1,4 +1,4 @@
-// *** Resorce Group Values ***
+// *** Azure Resorce Group Values ***
 resource_group_name = "rg-az-kubernetes"
 location = "canadacentral"
 tags = {

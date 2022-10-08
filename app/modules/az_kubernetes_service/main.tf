@@ -1,6 +1,4 @@
-                 /********************************
-                  *** Azure Kubernetes Service ***
-                  ********************************/
+// *** Azure Kubernetes Service ***
 resource "azurerm_kubernetes_cluster" "azure_kubernetes_cluster" {
   name                = var.kubernetes_cluster_name
   resource_group_name = var.resource_group_name

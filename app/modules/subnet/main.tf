@@ -1,4 +1,4 @@
-// *** Resource of Subnet ***
+// *** Azure Subnet ***
 resource "azurerm_subnet" "subnet" {
   for_each                                       = var.subnets
   resource_group_name                            = var.resource_group_name

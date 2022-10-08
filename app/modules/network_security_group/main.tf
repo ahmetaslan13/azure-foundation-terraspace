@@ -1,4 +1,4 @@
-// *** Network Security Group ***
+// *** Azure Network Security Group ***
 resource "azurerm_network_security_group" "network_security_group" {
   for_each            = var.network_security_groups
   name                = each.value.network_security_group.name
@@ -6,7 +6,7 @@ resource "azurerm_network_security_group" "network_security_group" {
   resource_group_name = var.resource_group_name
 }
 
-// *** Network Security Rule ***
+// *** Azure Network Security Rule ***
 resource "azurerm_network_security_rule" "network_security_group_security_rule" {
   for_each                    = var.network_security_groups
   name                        = each.value.security_rule.name

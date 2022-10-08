@@ -1,6 +1,3 @@
-                 /************************************************************
-                  *** Azure Azure Domain Name Server (DNS) All Variables *****
-                  ************************************************************/
 // *** Domain Name Server (DNS) Variables ***
 variable "dns_name" {
   description = ""

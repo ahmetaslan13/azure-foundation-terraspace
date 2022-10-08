@@ -1,4 +1,4 @@
-// *** Mssql Server ***
+// *** Azure Mssql Server ***
 resource "azurerm_mssql_server" "mssql_server" {
   name                         = var.mssql_server_name
   resource_group_name          = var.resource_group_name
@@ -8,7 +8,7 @@ resource "azurerm_mssql_server" "mssql_server" {
   administrator_login_password = var.administrator_login_password
 }
 
-// *** Mssql Database ***
+// *** Azure Mssql Database ***
 resource "azurerm_mssql_database" "mssql_database" {
   name           = var.mssql_database_name
   server_id      = azurerm_mssql_server.mssql_server.id

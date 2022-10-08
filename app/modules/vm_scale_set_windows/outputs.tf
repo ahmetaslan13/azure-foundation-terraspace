@@ -1,2 +1,2 @@
-// *** Windows Virtual Machine Scale Set Outputs ***
+// *** Azure Windows Virtual Machine Scale Set Outputs ***
 

@@ -13,7 +13,7 @@ data "azurerm_subnet" "subnet" {
   virtual_network_name = var.virtual_network_name
 }
 
-// *** Network Security Group Association ***
+// *** Azure Network Security Group Association ***
 resource "azurerm_subnet_network_security_group_association" "subnet_network_security_group_association" {
   for_each                  = var.subnets
   subnet_id                 = data.azurerm_subnet.subnet[each.key].id

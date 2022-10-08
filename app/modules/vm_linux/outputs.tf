@@ -1,2 +1,2 @@
-// *** VM Linux Outputs ***
+// *** Azure Virtual Machine Linux Outputs ***
 

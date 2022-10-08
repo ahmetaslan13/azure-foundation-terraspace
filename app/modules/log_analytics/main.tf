@@ -1,4 +1,4 @@
-// *** log Analytics ***
+// *** Azure log Analytics ***
 resource "azurerm_log_analytics_workspace" "log_analytics" {
   name                = var.log_analytics_name
   resource_group_name = var.resource_group_name

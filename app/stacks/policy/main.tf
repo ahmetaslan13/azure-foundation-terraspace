@@ -2,6 +2,7 @@
 module "initiative_policy" {
   source  = "../../modules/policy"
   id_list = var.initiative_id_list
+  management_group_id = var.management_group_id
 }
 
 // *** Create Azure Management Group Policy Assignment - PMBB ***

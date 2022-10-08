@@ -1,6 +1,3 @@
-                 /**********************************************
-                  *** Azure Kubernetes Service All Variables ***
-                  **********************************************/
 // *** Azure Kubernetes Service Variables ***
 variable "kubernetes_cluster_name" {
   description = ""

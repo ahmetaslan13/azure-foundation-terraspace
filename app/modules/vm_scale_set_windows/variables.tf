@@ -1,35 +1,28 @@
-// *** Windows Virtual Machine Scale Set Variables ***
+// *** Azure Windows Virtual Machine Scale Set Variables ***
 variable "vm_scale_set_name" {
   description = ""
   type        = string
 }
-
 variable "resource_group_name" {
   description = ""
   type        = string
 }
-
 variable "location" {
   description = ""
   type        = string
 }
-
 variable "sku" {
   description = ""
   type        = string
 }
-
 variable "instance" {
   description = ""
   type        = string
 }
-
-
 variable "admin_username" {
   description = ""
   type        = string
 }
-
 variable "admin_password" {
   description = ""
   type        = string
@@ -40,7 +33,6 @@ variable "caching" {
   description = ""
   type        = string
 }
-
 variable "storage_account_type" {
   description = ""
   type        = string
@@ -51,17 +43,14 @@ variable "publisher" {
   description = ""
   type        = string
 }
-
 variable "offer" {
   description = ""
   type        = string
 }
-
 variable "sku" {
   description = ""
   type        = string
 }
-
 variable "version" {
   description = ""
   type        = string
@@ -72,7 +61,6 @@ variable "network_interface_name" {
   description = ""
   type        = string
 }
-
 variable "network_interface_primary" {
   description = ""
   type        = string
@@ -83,12 +71,10 @@ variable "nic_ip_configuration_name" {
   description = ""
   type        = string
 }
-
 variable "nic_ip_configuration_primary" {
   description = ""
   type        = string
 }
-
 variable "subnet_id" {
   description = ""
   type        = list(any)

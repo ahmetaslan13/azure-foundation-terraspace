@@ -1,13 +1,10 @@
-                 /**************************************
-                  *** Azure Domain Name Server (DNS) ***
-                  **************************************/
-// *** Domain Name Server (DNS) ***
+// *** Azure Domain Name Server (DNS) ***
 resource "azurerm_dns_zone" "dns" {
   name                = var.dns_name
   resource_group_name = var.resource_group_name
 }
 
-// *** Domain Name Server (DNS) Record ***
+// *** Azure Domain Name Server (DNS) Record ***
 resource "azurerm_dns_a_record" "dns_record" {
   name                = var.dns_record_name
   resource_group_name = var.resource_group_name
