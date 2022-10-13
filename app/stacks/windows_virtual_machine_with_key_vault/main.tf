@@ -6,6 +6,18 @@ module "resource_group" {
   tags                = var.tags
 }
 
+// *** Get the Azure Key Vault name from data
+data "azurerm_key_vault" "test_key_vault" {
+  name                = "testadmin_keyvault"
+  resource_group_name = "test_resource_group"
+}
+
+//*** Get the Azure Key Vault secret from data
+data "azurerm_key_vault_secret" "adminuser" {
+  name         = "adminuser"
+  key_vault_id = data.azurerm_key_vault.adminuser.id
+}
+
 // *** Create Windows Virtual Machine ***
 module "virtual_machine_windows" {
   source                        = "../../modules/vm_windows"

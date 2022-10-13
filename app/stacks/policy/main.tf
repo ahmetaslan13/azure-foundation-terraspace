@@ -1,7 +1,7 @@
 // *** Create Azure Management Group Policy Assignment - Initiatives ***
 module "initiative_policy" {
-  source  = "../../modules/policy"
-  id_list = var.initiative_id_list
+  source              = "../../modules/policy"
+  id_list             = var.initiative_id_list
   management_group_id = var.management_group_id
 }
 

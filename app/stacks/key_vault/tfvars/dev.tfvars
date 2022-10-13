@@ -6,7 +6,7 @@ tags = {
 }
 
 // *** Key Vault Values ***
-key_vault_name = "kv-cac-dev-13"
+key_vault_name = "test-key-vault13"
 sku_name = "standard"
 soft_delete_retention_days = "7"
 key_permissions = [

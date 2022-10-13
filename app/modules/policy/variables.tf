@@ -5,5 +5,5 @@ variable "id_list" {
 }
 variable "management_group_id" {
   description = ""
-  type = any
+  type        = any
 }
