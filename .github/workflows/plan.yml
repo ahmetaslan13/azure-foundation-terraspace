@@ -23,5 +23,5 @@ jobs:
                 # Whatever commands you want to run here using the container with your
                 # new Docker image at ghcr.io!>
                 echo "--This is running in my custom Docker image--"
-                terraspace version
-          
+                terraspace up az_container_registry
+                
