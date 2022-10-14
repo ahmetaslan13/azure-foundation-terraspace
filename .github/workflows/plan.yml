@@ -12,7 +12,7 @@ jobs:
     super-job:
         runs-on: ubuntu-18.04
         container:
-            image: ghcr.io/<testacrname13>/<cli>:<latest>
+            image: testacrname13.azurecr.io/<testacrname13>/<cli>:<latest>
             credentials:
                username: "testacrname13"
                password: ${{  secrets.DOCKER_CONTAINER_REGISTRY_TOKEN }}
