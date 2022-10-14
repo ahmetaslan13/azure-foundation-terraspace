@@ -6,13 +6,13 @@ resource "azurerm_container_registry" "az_container_registry" {
   sku                 = var.sku
   admin_enabled       = var.admin_enabled
   georeplications {
-    location                = var.georeplications_location
-    zone_redundancy_enabled = var.zone_redundancy_enabled
-    tags                    = var.georeplications_tags
+    location                = var.georeplications_1_location
+    zone_redundancy_enabled = var.zone_redundancy_1_enabled
+    tags                    = var.georeplications_1_tags
   }
-  georeplications {
-    location                = var.georeplications_2_location
-    zone_redundancy_enabled = var.zone_redundancy_2_enabled
-    tags                    = var.georeplications_2_tags
-  }
+  # georeplications {
+  #   location                = var.georeplications_2_location
+  #   zone_redundancy_enabled = var.zone_redundancy_2_enabled
+  #   tags                    = var.georeplications_2_tags
+  # }
 }

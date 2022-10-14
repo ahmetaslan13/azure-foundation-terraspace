@@ -6,7 +6,7 @@ tags = {
 }
 
 // *** Azure Container Registery (ACR) Values ***
-  acr_name            = "az-container-registery-test"
+  acr_name            = "testacrname13"
   sku                 = "Premium"
   admin_enabled       = false
 
@@ -15,7 +15,7 @@ tags = {
   zone_redundancy_1_enabled = true
   georeplications_1_tags = {}
 
-// *** Georeplications-1 Values ***
-  georeplications_2_location = "Canada Central"
+// *** Georeplications-2 Values ***
+  georeplications_2_location = "North Europe"
   zone_redundancy_2_enabled = true
   georeplications_2_tags = {}
